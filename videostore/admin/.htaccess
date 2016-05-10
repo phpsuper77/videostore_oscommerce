@@ -1,0 +1,5 @@
+AuthGroupFile /dev/null
+AuthName "Administration Controls"
+AuthType Basic
+require valid-user
+AuthUserFile "/home/terrae2/.htpasswds/public_html/admin/passwd"

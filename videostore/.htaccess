@@ -1,0 +1,219 @@
+# $Id: .htaccess,v 1.3 2003/06/12 10:53:20 hpdl Exp $
+#
+# This is used with Apache WebServers
+#
+# For this to work, you must include the parameter 'Options' to
+# the AllowOverride configuration
+#
+# Example:
+#
+# <Directory "/usr/local/apache/htdocs">
+#   AllowOverride Options
+# </Directory>
+#
+# 'All' with also work. (This configuration is in the
+# apache/conf/httpd.conf file)
+# The following makes adjustments to the SSL protocol for Internet
+# Explorer browsers
+
+<IfModule mod_setenvif.c>
+  <IfDefine SSL>
+    SetEnvIf User-Agent ".*MSIE.*" \
+             nokeepalive ssl-unclean-shutdown \
+             downgrade-1.0 force-response-1.0
+  </IfDefine>
+</IfModule>
+# -- To execute php in htm
+AddType html htm 
+
+<Files .htaccess>
+order allow,deny
+deny from 112.201.158.249
+deny from all
+</Files>
+
+
+DirectoryIndex /home.php
+
+
+RewriteEngine On
+#RewriteLog "/home/terrae2/public_html/rewrite.log"
+#RewriteLogLevel 5
+# Roll your own Rewrite log
+# Log details via scale of 1 to 9
+# 1 = few details, 5 = enough details, 9 = too much detail
+
+# anti xss script 1 - pci compliance - by pixclinic
+Options +FollowSymLinks
+RewriteEngine On 
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*iframe.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index_error.php [F,L]
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+
+# extra anti uri and xss attack script 2 - sql injection prevention
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{QUERY_STRING} ("|%22).*(>|%3E|<|%3C).* [NC]
+RewriteRule ^(.*)$ log.php [NC]
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC]
+RewriteRule ^(.*)$ log.php [NC]
+RewriteCond %{QUERY_STRING} (javascript:).*(;).* [NC]
+RewriteRule ^(.*)$ log.php [NC]
+RewriteCond %{QUERY_STRING} (;|'|"|%22).*(union|select|insert|drop|update|md5|benchmark).* [NC]
+RewriteRule ^(.*)$ log.php [NC]
+RewriteRule (,|;|<|>|'|`) /log.php [NC]
+
+RewriteCond %{HTTP_USER_AGENT} ^Baidu [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Custo [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^DISCo [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Download\ Demon [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^eCatch [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EirGrabber [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EmailSiphon [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EmailWolf [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Express\ WebPictures [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ExtractorPro [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EyeNetIE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^FlashGet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GetRight [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GetWeb! [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Go!Zilla [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Go-Ahead-Got-It [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GrabNet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Grafula [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^HMView [OR] 
+RewriteCond %{HTTP_USER_AGENT} HTTrack [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Stripper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Sucker [OR] 
+RewriteCond %{HTTP_USER_AGENT} Indy\ Library [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} ^InterGET [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Internet\ Ninja [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^JetCar [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^JOC\ Web\ Spider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^larbin [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^LeechFTP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Mass\ Downloader [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^MIDown\ tool [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Mister\ PiX [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Navroad [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NearSite [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetAnts [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetSpider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Net\ Vampire [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetZIP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Octopus [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Explorer [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Navigator [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^PageGrabber [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Papa\ Foto [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^pavuk [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^pcBrowser [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^RealDownload [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ReGet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SiteSnagger [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SmartDownload [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SuperBot [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SuperHTTP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Surfbot [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^tAkeOut [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Teleport\ Pro [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^VoidEYE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Image\ Collector [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Sucker [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebAuto [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebFetch [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebGo\ IS [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebLeacher [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebReaper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebSauger [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Website\ eXtractor [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Website\ Quester [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebStripper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebWhacker [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebZIP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Wget [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Widow [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WWWOFFLE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Zeus 
+RewriteRule ^.* - [F,L]
+
+RewriteRule index.php?currency=(.+)&cPath=([0-9]+)ref115520&page=([0-9]+) index.php?currency=$1&cPath=$2&ref=115520&page=$3
+
+RewriteRule ^index.php?series_id=([1-9][0-9][1-9]*)$ /index.php/series_id/$1$2$3 [L]
+RewriteRule ^index.php?series_id=([1-9][0-9][1-9]*)/$ /index.php/series_id/$1$2$3 [L]
+RewriteRule ^sitemap_categories.html$ /sitemap_categories.php [L]
+RewriteRule ^sitemap_products.html$ /sitemap_products.php [L]
+RewriteRule ^sitemap_series.html$ /sitemap_series.php [L]
+RewriteRule ^sitemap_producers.html$ /sitemap_producers.php [L]
+RewriteRule ^sitemap_distributors.html$ /sitemap_distributors.php [L]
+
+
+RewriteRule ^category_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)\.html* index.php?cPath=$1_$2_$3_$4_$5_$6 [L]
+RewriteRule ^category_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)\.html* index.php?cPath=$1_$2_$3_$4_$5 [L]
+RewriteRule ^category_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)\.html* index.php?cPath=$1_$2_$3_$4 [L]
+RewriteRule ^category_([1-9][0-9]*)_([1-9][0-9]*)_([1-9][0-9]*)\.html* index.php?cPath=$1_$2_$3 [L]
+RewriteRule ^category_([1-9][0-9]*)_([1-9][0-9]*)\.html* index.php?cPath=$1_$2 [L]
+RewriteRule ^category_([1-9][0-9]*)\.html* index.php?cPath=$1 [L]
+
+RewriteRule ^bD-DVD-ALASKA_wrap.jpg /images/distdisc/BD-DVD-ALASKA_wrap.jpg
+
+RewriteRule ^product_([1-9][0-9][0-9][0-9][0-9]*)\.html/$ /product_info.php?products_id=$1 [L]
+RewriteRule ^product_([1-9][0-9][0-9][0-9]*)\.html$ /product_info.php?products_id=$1 [L]
+RewriteRule ^product_([1-9][0-9][0-9]*)\.html$ /product_info.php?products_id=$1 [L]
+RewriteRule ^product_([1-9][0-9]*)\.html$ /product_info.php?products_id=$1 [L]
+
+#redirect 301 /asia  http://travelvideostore.com/index.php?cPath=149&ref=115111
+#redirect 301 /florida  http://travelvideostore.com/index.php?cPath=33_35_312&ref=115111
+#redirect 301 /hawaii  http://travelvideostore.com/index.php?cPath=33_35_304&ref=115111
+#redirect 301 /mexico  http://travelvideostore.com/index.php?cPath=33_43&ref=115111
+#redirect 301 /caribbean  http://travelvideostore.com/index.php?cPath=259&ref=115111
+#redirect 301 /india  http://travelvideostore.com/index.php?cPath=149_170&ref=115111
+#redirect 301 /bike-o-vision  http://travelvideostore.com/index.php?cPath=808_1646
+#redirect 301 /bikeovision  http://travelvideostore.com/index.php?cPath=808_1646
+
+redirect 301 /site http://travelvideostore.com
+redirect 301 /site/ http://travelvideostore.com
+redirect 301 /members http://travelvideostore.com
+redirect 301 /redeem/ http://travelvideostore.com/redeem.php
+
+ErrorDocument 400 /http_error.php?error_id=400
+ErrorDocument 401 /http_error.php?error_id=401
+ErrorDocument 403 /http_error.php?error_id=403
+ErrorDocument 404 /http_error.php?error_id=404
+ErrorDocument 405 /http_error.php?error_id=405
+ErrorDocument 408 /http_error.php?error_id=408
+ErrorDocument 415 /http_error.php?error_id=415
+ErrorDocument 500 /http_error.php?error_id=500
+ErrorDocument 501 /http_error.php?error_id=501
+ErrorDocument 502 /http_error.php?error_id=502
+ErrorDocument 503 /http_error.php?error_id=503
+ErrorDocument 505 /http_error.php?error_id=505
+ErrorDocument 504 /http_error.php?error_id=504
+
+
+RewriteCond %{SERVER_PORT} ^80$
+RewriteRule ([^/]+).php/([^/]+)/([^/]+) http://www.travelvideostore.com/$1.php?$2=$3 [C]
+RewriteRule ([^/]+).php/([^/]+)/([^/]+)/([^/]+)/([^/]+) http://www.travelvideostore.com/$1.php?$2=$3&&$4=$5 [C]
+RewriteRule ([^/]+).php/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+) http://www.travelvideostore.com/$1.php?$2=$3&$4=$5&$6=$7 [L]
+RewriteCond %{SERVER_PORT} ^443$
+RewriteRule ([^/]+).php/([^/]+)/([^/]+) http://www.travelvideostore.com/$1.php?$2=$3 [C]
+RewriteRule ([^/]+).php/([^/]+)/([^/]+)/([^/]+)/([^/]+) http://www.travelvideostore.com/$1.php?$2=$3&&$4=$5 [C]
+RewriteRule ([^/]+).php/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+) http://www.travelvideostore.com/$1.php?$2=$3&$4=$5&$6=$7 [L]
+
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{IS_SUBREQ} !=true [NC] 
+RewriteCond %{REQUEST_FILENAME}  !-f 
+RewriteCond %{REQUEST_FILENAME}  !-d 
+RewriteRule (.*) dispatcher.php [QSA,L,E=REDIRECT_URL:$1]

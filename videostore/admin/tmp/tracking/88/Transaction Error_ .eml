@@ -1,0 +1,39 @@
+Return-path: <terrae2@travelvideostore.com>
+Envelope-to: creditcardreceipt@travelvideostore.com,
+ creditcardreceipt@travelvideostore.com
+Delivery-date: Sun, 08 Apr 2007 21:15:07 -0400
+Received: from apache by cp.travelvideostore.com with local (Exim 4.42)
+	id 1HaiTI-0006Eh-NV; Sun, 08 Apr 2007 21:15:07 -0400
+To: creditcardreceipt@travelvideostore.com
+Subject: Transaction Error: 
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Transaction service
+To: CreditCardReceipt <creditcardreceipt@travelvideostore.com>
+Message-Id: <E1HaiTI-0006Eh-NV@cp.travelvideostore.com>
+Date: Sun, 08 Apr 2007 21:15:04 -0400
+
+
+<table width="800" border="1"><tr><td>array(10) {
+  ["payment"]=>
+  string(12) "linkpointms1"
+  ["cc_owner"]=>
+  string(11) "JINSOO PARK"
+  ["cc_number"]=>
+  string(16) "5441237012062249"
+  ["cc_expires_month"]=>
+  string(2) "08"
+  ["cc_expires_year"]=>
+  string(2) "08"
+  ["cc_checkcode"]=>
+  string(0) ""
+  ["purchase_order_number"]=>
+  string(0) ""
+  ["comments"]=>
+  string(0) ""
+  ["x"]=>
+  string(2) "57"
+  ["y"]=>
+  string(1) "2"
+}
+</td></tr></table><br><br><b>Reason:</b> The credit card number entered is invalid.<br>Please check the number and try again.

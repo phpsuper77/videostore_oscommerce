@@ -1,0 +1,83 @@
+Return-path: <terrae2@travelvideostore.com>
+Envelope-to: creditcardreceipt@travelvideostore.com,
+ creditcardreceipt@travelvideostore.com
+Delivery-date: Mon, 01 Oct 2007 13:30:36 -0400
+Received: from apache by cp.travelvideostore.com with local (Exim 4.42)
+	id 1IcP6K-0008Iu-Ns; Mon, 01 Oct 2007 13:30:36 -0400
+To: creditcardreceipt@travelvideostore.com
+Subject: Transaction Error: SGS-020003: Invalid XML
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Transaction service
+To: CreditCardReceipt <creditcardreceipt@travelvideostore.com>
+Message-Id: <E1IcP6K-0008Iu-Ns@cp.travelvideostore.com>
+Date: Mon, 01 Oct 2007 13:30:36 -0400
+
+
+<table width="800" border="1"><tr><td>array(32) {
+  ["host"]=>
+  string(17) "secure.linkpt.net"
+  ["port"]=>
+  string(4) "1129"
+  ["storename"]=>
+  string(6) "884848"
+  ["keyfile"]=>
+  string(29) "includes/linkpoint/884848.pem"
+  ["result"]=>
+  string(4) "LIVE"
+  ["Ip"]=>
+  string(14) "71.180.164.219"
+  ["userid"]=>
+  string(5) "40523"
+  ["cardNumber"]=>
+  string(16) "5569260002340125"
+  ["cardExpMonth"]=>
+  string(2) "11"
+  ["cardExpYear"]=>
+  string(2) "07"
+  ["bname"]=>
+  string(13) "JOY GOLDSTEIN"
+  ["phone"]=>
+  string(11) "937-8248206"
+  ["comments"]=>
+  string(0) ""
+  ["baddr1"]=>
+  string(16) "6 N. MAIN STREET"
+  ["addrnum"]=>
+  string(16) "6 N. MAIN STREET"
+  ["bcity"]=>
+  string(6) "DAYTON"
+  ["bstate"]=>
+  string(4) "Ohio"
+  ["bzip"]=>
+  string(5) "45402"
+  ["bcountry"]=>
+  string(2) "US"
+  ["sname"]=>
+  string(44) "KATIE SORENSEN CATERING & CONVENTION MANAGER"
+  ["saddr1"]=>
+  string(16) "200 NOHEA KAI DR"
+  ["scity"]=>
+  string(13) "LAHAINA, MAUI"
+  ["sstate"]=>
+  string(6) "Hawaii"
+  ["szip"]=>
+  string(5) "96761"
+  ["scountry"]=>
+  string(2) "US"
+  ["oid"]=>
+  NULL
+  ["chargetotal"]=>
+  string(6) "514.51"
+  ["subtotal"]=>
+  string(6) "514.51"
+  ["shipping"]=>
+  string(4) "0.00"
+  ["tax"]=>
+  string(4) "0.00"
+  ["cvmindicator"]=>
+  string(12) "cvm_provided"
+  ["cvmvalue"]=>
+  string(3) "712"
+}
+</td></tr></table><br><br><b>Reason:</b> SGS-020003: Invalid XML

@@ -1,0 +1,233 @@
+<?php
+/*
+  $Id: shopping_cart.php,v 1.18 2003/02/10 22:31:06 hpdl Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+*/
+?>
+<!-- shopping_cart //-->
+          <tr>
+            <td>
+<?php
+  $info_box_contents = array();
+  $info_box_contents[] = array('text' => BOX_HEADING_SHOPPING_CART);
+
+  new infoBoxHeading($info_box_contents, false, true, tep_href_link(FILENAME_SHOPPING_CART));
+
+  $cart_contents_string = '';
+  ###
+  #	changes made by Nirmal
+  ###
+    $ip = $_SERVER['REMOTE_ADDR'];
+    //$ip="206.51.234.233";
+    $country_query  = "SELECT country_code2,country_name FROM ip2add WHERE IP_FROM<=inet_aton('$ip') AND IP_TO>=inet_aton('$ip') ";
+    $country_exec = tep_db_query($country_query);
+    $ccode_array = tep_db_fetch_array($country_exec);
+    $country_code=$ccode_array['country_code2'];
+    $country_name=$ccode_array['country_name'];
+    $country_code = strtoupper($country_code);
+    $country_flag_query ="select FLAG_NAME from ip2flag where COUNTRY_CODE2='$country_code'";
+    $country_flag_exec = tep_db_query($country_flag_query);
+    $ccode_flag_array = tep_db_fetch_array($country_flag_exec);
+    $flagname = $ccode_flag_array['FLAG_NAME'];
+    $caps_letter = strtoupper(substr($flagname,0,2));
+    $flagname = "$caps_letter.gif";
+
+    if(isset($flagname)){
+    $flagname = "images/flags/".$flagname;
+    }
+  #########
+
+
+  if ($cart->count_contents() > 0) {
+    $cart_contents_string = '<table border="0" width="100%" cellspacing="0" cellpadding="0">';
+    $products = $cart->get_products();
+      ###
+      #	Added by Nirmal
+      ##
+    	if(isset($flagname) && $country_code!='US'){
+     	$cart_contents_string .= '<center>We ship to <b>'.$country_name.'</b>&nbsp;<img src='.$flagname.'></img></center><br><br>';
+     }
+     #####
+
+  for ($i=0, $n=sizeof($products); $i<$n; $i++) {
+      $cart_contents_string .= '<tr><td align="right" valign="top" class="infoBoxContents">';
+
+      if ((tep_session_is_registered('new_products_id_in_cart')) && ($new_products_id_in_cart == $products[$i]['id'])) {
+       $cart_contents_string .= '<span class="newItemInCart-modified">';
+      } else {
+        $cart_contents_string .= '<span class="infoBoxContents">';
+      }
+
+      $cart_contents_string .= $products[$i]['quantity'] . '&nbsp;x&nbsp;</span></td><td valign="top" class="infoBoxContents"><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $products[$i]['id']) . '">';
+
+      if ((tep_session_is_registered('new_products_id_in_cart')) && ($new_products_id_in_cart == $products[$i]['id'])) {
+        $cart_contents_string .= '<span class="newItemInCart-modified">';
+       } else {
+        $cart_contents_string .= '<span class="infoBoxContents">';
+      }
+
+      $cart_contents_string .= $products[$i]['name'] . '</span></a></td></tr>';
+
+      if ((tep_session_is_registered('new_products_id_in_cart')) && ($new_products_id_in_cart == $products[$i]['id'])) {
+        tep_session_unregister('new_products_id_in_cart');
+      }
+    }
+    $cart_contents_string .= '</table>';
+  } else {
+    	###
+    	#	Added by Nirmal
+    	###
+    	if(isset($flagname) && $country_code!='US'){
+     	$cart_contents_string .= '<center>We ship to <b>'.$country_name.'</b>&nbsp;<img src='.$flagname.'></img>&nbsp;</center><br>';
+     }
+     ###
+
+  $cart_contents_string .= BOX_SHOPPING_CART_EMPTY;
+  }
+
+  $info_box_contents = array();
+  $info_box_contents[] = array('text' => $cart_contents_string);
+
+  if ($cart->count_contents() > 0) {
+    $info_box_contents[] = array('text' => tep_draw_separator());
+
+	//START - INCLUDED FOR DISCOUNT COUPON
+	if (tep_session_is_registered('couponfield')){
+	  $discount_query_raw = "select *  from discounts where discount_code = '$_SESSION[couponfield]'";
+	  $discount_query = tep_db_query($discount_query_raw);
+	  $count_qry = tep_db_num_rows($discount_query);
+	  if ($count_qry > 0)
+	  {
+		  $row_discount_query = tep_db_fetch_array($discount_query);
+		  $disc_per = $row_discount_query["discount_amount"];
+		  $disc_name = $row_discount_query["discount_name"];
+		  $cval=$cart->show_total();
+
+			$damt=($cval*$disc_per)/100;
+			//$discount_content .= '<span class="infoBoxContents">Cart Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: '. $cart->show_total() .'<br>Travel Adventure Show Discount &nbsp;:&nbsp; -'. $currencies->format($damt) .'<br>Total Amount &nbsp;: '. $currencies->format(($cart->show_total()-$damt)) .'</span>';
+			$discount_content = '<table border="0" width="100%" cellspacing="0" cellpadding="0">';
+			$discount_content .= '<tr><td align="left" valign="top" class="infoBoxContents">Cart Total : </td>';
+			$discount_content .= '<td align="right" valign="top" class="infoBoxContents">$'. $cart->show_total() .'</td></tr>';
+			$discount_content .= '<tr><td align="left" valign="top" class="infoBoxContents">'.$disc_name.':</td>';
+			$discount_content .= '<td align="right" valign="bottom" class="infoBoxContents" width=25%>-'. $currencies->format($damt) .'</td>';
+			$discount_content .= '</tr><tr><td align="left" valign="top" class="infoBoxContents">Total Amount :</td>';
+			$discount_content .= '<td align="right" valign="top" class="infoBoxContents">'. $currencies->format(($cart->show_total()-$damt)) .'</td></tr></table>';
+			$info_box_contents[] = array('text' => $discount_content);
+		}
+		else
+		{
+			$info_box_contents[] = array('align' => 'right',
+										 'text' => $currencies->format($cart->show_total()));
+		}
+	}
+	else
+	{
+		$info_box_contents[] = array('align' => 'right',
+									 'text' => $currencies->format($cart->show_total()));
+	}
+	//END - INCLUDED FOR DISCOUNT COUPON
+
+    //$info_box_contents[] = array('align' => 'right',
+    //                             'text' => $currencies->format($cart->show_total()));
+  }
+
+  // *********************** new shopping cart enhancement ******************************* //
+
+// Bof Shopping Cart Box Enhancement
+$showcheckoutbutton = 1; // set to 1: show checkout button (default); set to 0: never show checkout button
+$showhowmuchmore = 1;    // set to 1: show how much more to spend for free shipping (default); set to 0: don't show
+
+$cart_show_string = '<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>' . tep_draw_separator('pixel_trans.gif', '100%', '4') . '</td></tr>';
+$cart->cleanup();
+if (MODULE_SHIPPING_FREECOUNT_STATUS == 'True') {
+    if (($cart->count_contents()) < MODULE_SHIPPING_FREECOUNT_NUMBER) {
+       if (MODULE_ORDER_TOTAL_SHIPPING_DESTINATION == 'both') {
+              		###
+	          		#	Added by Nirmal
+	          		###
+	          	       	if(isset($flagname) && $country_code=='US'){
+           $cart_show_string .= '<tr><td class="extraSmallText" align="center">' . sprintf(TEXT_FREE_SHIPPING_LIMIT, MODULE_SHIPPING_FREECOUNT_NUMBER);
+          }
+          ###
+       }
+       else if (MODULE_ORDER_TOTAL_SHIPPING_DESTINATION == 'international') {
+              		###
+	          		#	Added by Nirmal
+	          		###
+	          	       	if(isset($flagname) && $country_code=='US'){
+           $cart_show_string .= '<tr><td class="extraSmallText" align="center">' . sprintf(TEXT_FREE_SHIPPING_LIMIT_INTERNATIONAL, MODULE_SHIPPING_FREECOUNT_NUMBER,tep_get_country_name(STORE_COUNTRY));
+           }
+           #####
+       }
+       else {
+              		###
+	          		#	Added by Nirmal
+	          		###
+	          	       	if(isset($flagname) && $country_code=='US'){
+           $cart_show_string .= '<tr><td class="extraSmallText" align="center">' . sprintf(TEXT_FREE_SHIPPING_LIMIT_NATIONAL, MODULE_SHIPPING_FREECOUNT_NUMBER,tep_get_country_name(STORE_COUNTRY));
+           }
+           ###
+       }
+       if (($showhowmuchmore) && ($cart->count_contents() > 0)) {
+       		       		###
+			       		#	Added by Nirmal
+			       		###
+			       	       	if(isset($flagname) && $country_code=='US'){
+                $cart_show_string .= '<br>' . sprintf(TEXT_ADD_TO_GET_FREE_SHIPPING, MODULE_SHIPPING_FREECOUNT_NUMBER - ($cart->count_contents()));
+               }
+               ###
+       }
+       $cart_show_string .='</td></tr>';
+    }
+    if ((($cart->count_contents()) >= MODULE_SHIPPING_FREECOUNT_NUMBER)&&($showhowmuchmore)) {
+       if (MODULE_ORDER_TOTAL_SHIPPING_DESTINATION == 'both') {
+       		       		###
+			       		#	Added by Nirmal
+			       		###
+			       	       	if(isset($flagname) && $country_code=='US'){
+         $cart_show_string .= '<tr><td class="extraSmallText" align="center">' . TEXT_FREE_SHIPPING_RECEIVED . '</td></tr>';
+         }
+         ###
+       }
+       else if (MODULE_ORDER_TOTAL_SHIPPING_DESTINATION == 'international') {
+       	       		###
+		       		#	Added by Nirmal
+		       		###
+		       	       	if(isset($flagname) && $country_code=='US'){
+         $cart_show_string .= '<tr><td class="extraSmallText" align="center">' . sprintf(TEXT_FREE_SHIPPING_RECEIVED_INTERNATIONAL, tep_get_country_name(STORE_COUNTRY)) . '</td></tr>';       }
+         }
+         ###
+       else {
+              		###
+	          		#	Added by Nirmal
+	          		###
+	          	       	if(isset($flagname) && $country_code=='US'){
+         $cart_show_string .= '<tr><td class="extraSmallText" align="center">' . sprintf(TEXT_FREE_SHIPPING_RECEIVED_NATIONAL, tep_get_country_name(STORE_COUNTRY)) . '</td></tr>';
+         }
+         ###
+       }
+    }
+}
+
+if (($showcheckoutbutton==1)&&($cart->count_contents() > 0)) {
+  $cart_show_string .= '<tr><td>' . tep_draw_separator('pixel_trans.gif', '100%', '7') . '</td></tr><tr><td align="center"><a href="' . tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL') . '">' . tep_image_button('button_checkout.gif', IMAGE_BUTTON_CHECKOUT) . '</a></td></tr>';
+  $cart_show_string .= '<tr><td>' . tep_draw_separator('pixel_trans.gif', '100%', '7') . '</td></tr><tr><td class="extraSmallText" align="center"><a href="./shopping_cart.php">' . tep_image_button('button_update_cart.gif', IMAGE_BUTTON_UPDATE_CART) . '</a><br>Select Update Cart to change Quantity or Remove items</td></tr>';
+}
+$cart_show_string .= '</table>';
+$info_box_contents[] = array('text' => $cart_show_string);
+// Eof Shopping Cart Box Enhancement
+
+// *********************** end new shopping cart enhancement *************************** //
+
+  new infoBox($info_box_contents);
+
+?>
+            </td>
+          </tr>
+<!-- shopping_cart_eof //-->

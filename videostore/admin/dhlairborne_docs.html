@@ -1,0 +1,230 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>DHL/Airborne Shipping Module Information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body { background: #FFE88A; padding: 0; margin: 0; text-align: center; }
+
+#container { width: 500px; height: 100%; background: #FFFFFF; border-left: 1px solid #000000; border-right: 1px solid #000000; margin-right: auto; margin-left: auto; }
+#header { border: none; background: #FFCC00; padding: 2px; }
+#header IMG { vertical-align: middle; }
+
+.pageHeading { font-family: Verdana, Arial, sans-serif; font-size: 18px; color: #000000; font-weight: bold; vertical-align: middle; }
+.main { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+.smallText { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.smallText A { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; font-weight: normal; text-decoration: none; }
+.smallText A:hover { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #000000; font-weight: normal; text-decoration: underline; }
+
+.chapterTitle { text-align: left; font-weight: bold; background: #CC0000; color: #FFFFFF; border-bottom: 1px solid #000000; border-top: 1px solid #000000; padding-left: 3px; padding-right: 3px; padding-top: 2px; padding-bottom: 2px; }
+.chaptersubTitle { text-align: left; font-weight: bold; background: #FFFFFF; border-bottom: none; border-top: 1px solid #000000; padding-left: 3px; padding-right: 3px; padding-top: 2px; padding-bottom: 2px; }
+.chapterContents { text-align: left; background: #FFFFFF; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 10px; }
+.chapterContents A { color: #000000; text-decoration: none; }
+.chapterContents A:hover { color: #000000; text-decoration: underline; }
+
+ul.chapters { list-style: none; font-weight: bold; padding: 0; margin: 0; }
+ul.chapters li { padding-bottom: 20px; }
+ul.chapters li ul { list-style: url("images/dhlairborne/dhl_arrow.gif"); font-weight: normal; }
+ul.chapters li ul li { padding-bottom: 0; }
+ul.chapters li ul li ul { padding-left: 20px; }
+li.subChapters { list-style: url("images/dhlairborne/dhl_arrow_down.gif"); }
+-->
+</style>
+</head>
+
+<body>
+<div id="container">
+  <div id="header">
+  <img src="images/dhlairborne/dhl_logo.gif">
+  <span class="pageHeading"><strong>DHL/Airborne Shipping Module</strong></span>
+  </div>
+  <div class="chapterTitle"><span class="main">Table of Contents</span></div>
+  <div class="chapterContents"><span class="main">
+  <ul class="chapters">
+    <li>[1] <a href="#1.0">Overview</a></li>
+    <li>[2] <a href="#2.0">Getting Started</a>
+      <ul>
+        <li><a href="#2.1">Setting up an account with DHL/Airborne</a></li>
+        <li><a href="#2.2">Obtain your shipping keys</a></li>
+        <li><a href="#2.3">Getting access to the rate request API</a></li>
+      </ul>
+    </li>
+    <li>[3] <a href="#3.0">Configurations &amp; Options</a>
+      <ul>
+        <li class="subChapters"><a href="#3.1">DHL/Airborne API Access</a>
+          <ul>
+            <li><a href="#3.1.1">System ID</a></li>
+            <li><a href="#3.1.2">Password</a></li>
+            <li><a href="#3.1.3">Shipping Key</a></li>
+            <li><a href="#3.1.4">Customer/Account Number</a></li>
+          </ul>
+        </li>
+        <li><a href="#3.2">Test/Production Server</a></li>
+        <li><a href="#3.3">Shipping Methods</a></li>
+        <li><a href="#3.4">Estimated Delivery Time</a></li>
+        <li><a href="#3.5">Shipment Type</a></li>
+        <li><a href="#3.6">Days to Shipment</a></li>
+        <li><a href="#3.7">Override Express Saturday Shipping</a></li>
+        <li class="subChapters"><a href="#3.8">Dimensional Weight</a>
+          <ul>
+            <li><a href="#3.8.1">Average Dimensions</a></li>
+            <li><a href="#3.8.2">Dimensional Exclusive Option</a></li>
+          </ul>
+        </li>
+        <li class="subChapters"><a href="#3.9">Additional Protection</a>
+          <ul>
+            <li><a href="#3.9.1">Additional Protection Type</a></li>
+            <li><a href="#3.9.2">Additional Protection Value</a></li>
+          </ul>
+        </li>
+        <li><a href="#3.10">Handling Fee</a></li>
+      </ul>
+    </li>
+  </ul>
+  </span></div>
+  <div class="chapterTitle"><span class="main"><a name="1.0"></a>[1.0] Overview</span></div>
+	      
+    <div class="chapterContents"><span class="main">This is a shipping module for the DHL/Airborne ShipIt/RateIt XML API. As of this writing, the API is Domestic (US) only. Currently this module only supports shipping rate quotes and does not currently support sending shipments to DHL/Airborne or printing of labels. This functionality is on the TODO list and will be added in the future. </span></div>
+		  
+	<div class="chapterTitle"><span class="main"><a name="2.0"></a>[2.0] Getting Started</span></div>      
+    <div class="chapterContents"><span class="main">You will find information 
+      in this chapter that will help in getting setup with Airborne if you don't 
+      already have an account, information on obtaining shipping keys that will 
+      be used to get accurate quotes, and how to gain access to the rate request 
+      API.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="2.1"></a>[2.1] Setting up an account with DHL/Airborne</span></div>
+                                                                <div class="chapterContents"><span class="main">If you do not already have 
+      a DHL/Airborne customer number, you may obtain one through DHL &#8217;s 
+      website (<a href="http://www.dhl.com" target="_blank"><u>www.dhl.com</u></a>). 
+      From the USA home page, select <em>Register or Open Account </em> from the list on the 
+      left and follow the directions. Once you have your customer number, you are ready to continue. </span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="2.2"></a>[2.2] Obtain your shipping keys</span></div>
+    <div class="chapterContents"><span class="main">Once you have your DHL/Airborne customer number, you will need to fill out the <em>osCommerce Customer Signup API Form </em> &amp; <em>AIRBORNE EXPRESS AGREEMENT FOR CUSTOMERS</em> 
+      PDF documents that came packaged with this module (osCommerce_API_Signup_Form.doc &amp; ShipIT_Customer_Agreement.pdf) and follow the instructions. Once DHL/Airborne 
+      has received your signed agreements, a shipping key(s) will be emailed to you.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="2.3"></a>[2.3] Getting access to the rate request API</span></div>
+    <div class="chapterContents"><span class="main">Once you have your DHL/Airborne customer number, you will need to fill out the <em>osCommerce Customer Signup API Form </em> &amp; <em>AIRBORNE EXPRESS AGREEMENT FOR CUSTOMERS</em> PDF documents that came packaged with this module (osCommerce_API_Signup_Form.doc &amp; ShipIT_Customer_Agreement.pdf) and follow the instructions. Once DHL/Airborne has received your signed agreements, a systemID and password to access the 
+      API will be emailed to you.</span></div>
+	  
+	<div class="chapterTitle"><span class="main"><a name="3.0"></a>[3.0] Configurations &amp; Options</span></div>      
+    <div class="chapterContents"><span class="main">This chapter explains in detail 
+      each configuration variable &amp; option that can be set for the module 
+      through the osCommerce admin -&gt; modules -&gt; shipping section.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.1"></a>[3.1] Airborne API Access</span></div>
+    <div class="chapterContents"><span class="main">These four fields are used 
+      to gain access to the ShipIt API and get rate quotes based on your account.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.1.1"></a>[3.1.1]  System ID</span></div>
+    <div class="chapterContents"><span class="main">This is the system ID/username 
+      that DHL/Airborne emailed back to you after they received your signed agreements.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.1.2"></a>[3.1.2]  Password</span></div>
+    <div class="chapterContents"><span class="main">This is the password that 
+      DHL/Airborne assigned to your system ID/username.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.1.3"></a>[3.1.3]  Shipping Key</span></div>
+    <div class="chapterContents"><span class="main">This is the shipping key that 
+      DHL/Airborne assigned to your account after they received your signed  agreements.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.1.4"></a>[3.1.4]  Customer/Account Number</span></div>
+                                                                <div class="chapterContents"><span class="main">This is your DHL/Airborne customer/account 
+      number. </span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.2"></a>[3.2] Test/Production Server</span></div>
+    <div class="chapterContents"> <span class="main">You should use the test server 
+      when you 1st setup the module to ensure it is working properly. After you 
+      have the module setup how you like and verify that it is working properly, 
+      you should switch to the production server before you start taking real 
+      orders using this module.<br>
+      <br>
+      <em>** Please Note: Both the test &amp; production servers require a valid system ID, password, &amp; valid shipping key for access.</em></span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.3"></a>[3.3] Shipping Methods</span></div>
+  <div class="chapterContents"><span class="main">This enables you to choose 
+      from the several shipping methods DHL/Airborne offers: Ground, Second Day Service, 
+      Next Afternoon, Express, Express 10:30 AM, and Express Saturday shipping. </span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.4"></a>[3.4] 
+      Estimated Delivery Time</span></div>
+    <div class="chapterContents"><span class="main">This option will show the 
+      estimated delivery time in the checkout beside each shipping method enabled.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.5"></a>[3.5] Shipment Type</span></div>
+    <div class="chapterContents"><span class="main">This sets where you are shipping 
+      regular packages or letters.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.6"></a>[3.6] Days to Shipment</span></div>
+    <div class="chapterContents"><span class="main">This sets the shipment date 
+      that is used in the rate request to DHL/Airborne. If this is set to 0 and a 
+      customer orders on January 1st, 2004; the shipment date sent to DHL/Airborne 
+      will be January 1st, 2004. If it is 1, the shipment date will be January 
+      2nd, 2004; etc . . .</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.7"></a>[3.7] Override Express Saturday Shipping</span></div>
+    <div class="chapterContents"><span class="main">DHL/Airborne's API only allows 
+      quotes for Express Saturday shipping when the shipping date is a Friday. 
+      Use this option to override that (enable Express Saturday shipping quotes 
+      when the shipment day is NOT a friday).</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.8"></a>[3.8] Dimensional Weight</span></div>
+    <div class="chapterContents"><span class="main">DHL/Airborne offers the option 
+      of providing dimensions. DHL/Airborne then caclculates the dimensional weight 
+      using the standard formula (length x width x height divided by 194). If 
+      dimensional weight is used, the greater of the two (dimensional weight or 
+      actual shipping weight) is used to calculate the shipping quotes. If Dimensional 
+      Weight is used, the two options <em>Average Dimensions</em> &amp; <em>Dimensional 
+      Exclusive Option</em> must be set. They are explained below. </span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.8.1"></a>[3.8.1] Average Dimensions</span></div>
+    <div class="chapterContents"><span class="main">Average dimensions in units 
+      of inches are entered as a table. The formatting is as follows:<br>
+      <br>
+      #of products ordered<strong>:</strong>length<strong>x</strong>width<strong>x</strong>height<br>
+      <br>
+      A comma should seperate each entry. Example: 1:12x8x2,3:24x10x3<br>
+      Under the default settings with dimensional weight enabled, the above table 
+      would be interpreted as: One or more products ordered, the average package 
+      size is 12&quot; long by 8&quot; wide by 2&quot; high; three or more products 
+      ordered, the average package size is 24&quot; long by 10&quot; wide by 3&quot; 
+      high.<br>
+      <br>
+      That can be changed to be interpreted as exclusive to number of products 
+      instead of that number or more. That option is explained below.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.8.2"></a>[3.8.2] Dimensional Exclusive Option</span></div>
+    <div class="chapterContents"><span class="main">This option allows for the 
+      average dimensions table to be exclusive to the number of products.<br>
+      <br>
+      Example: On the above average dimensions table, with this option enabled, 
+      the table would be interpreted as: One product ordered, the average package 
+      size is 12&quot; long by 8&quot; wide by 2&quot; high; three products ordered, 
+      the average package size is 24&quot; long by 10&quot; wide by 3&quot; high.<br>
+      <br>
+      With this option enabled, in this example, if two products are ordered or 
+      if more than three are ordered, dimensional weight is NOT used in the shipping 
+      rate request.</span></div>
+    <div class="chaptersubTitle"><span class="main"><a name="3.9"></a>[3.9] Additional Protection</span></div>
+    <div class="chapterContents"><span class="main">This option enables the cost 
+      of additional protection (i.e. shipping insurance) to be included in the shipping 
+      quote. Please see the DHL/Airborne Service Guide or contact Customer Service 
+      for complete details.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.9.1"></a>[3.9.1] Additional Protection Type</span></div>
+    <div class="chapterContents"><span class="main">If additional protection is 
+      enabled, you will need to select the protection type you want to use. There 
+      is only one type of protection:<br>
+      <br>
+      Asset Protection or Shipment Value Protection (AP): All Risk Asset Protection 
+      is available for shipments beyond the published Limit of Liability.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.9.2"></a>[3.9.2] Additional Protection Value</span></div>
+    <div class="chapterContents"><span class="main">If additional protection is 
+      enabled, the protection value by default is equal to the subtotal of the 
+      cart. This field is used to add additional value onto the cart subtotal. 
+      Either dollar amounts or percentages can be put into this field.<br>
+      <br>
+      Example (cart subtotal is $200):<br>
+      0 <em>or</em> nothing (blank field) - uses cart subtotal of $200 as protection 
+      value.<br>
+      10 - adds $10 to the subtotal, making the protection value $210.<br>
+      10% - adds 10% of the subtotal, making the protection value $220.</span></div>
+	<div class="chaptersubTitle"><span class="main"><a name="3.10"></a>[3.10] Handling Fee</span></div>
+    <div class="chapterContents"><span class="main">This will add a flat handling 
+      fee onto each quote returned.</span></div>
+
+<div class="chaptersubTitle"><span class="main"></span></div>
+
+<div class="chapterContents">
+<div align="right"><span class="smallText"><a href="javascript:window.close()" class="smallLink"><u>Close Window</u> [x]</a>&nbsp;</span></div>
+</div>
+
+</div>
+
+</body>
+</html>

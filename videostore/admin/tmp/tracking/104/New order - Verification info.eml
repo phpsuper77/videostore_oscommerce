@@ -1,0 +1,39 @@
+Return-path: <terrae2@travelvideostore.com>
+Envelope-to: customerservice@travelvideostore.com
+Delivery-date: Wed, 25 Apr 2007 13:51:26 -0400
+Received: from apache by cp.travelvideostore.com with local (Exim 4.42)
+	id 1HgleI-0005yc-8g
+	for customerservice@travelvideostore.com; Wed, 25 Apr 2007 13:51:26 -0400
+To: customerservice@travelvideostore.com
+Subject:  New order - Verification info
+From: "Customer Service" <customerservice@travelvideostore.com>
+MIME-Version: 1.0
+X-Mailer: osCommerce Mailer
+Content-Type: multipart/alternative;
+	boundary="=_ce828d96bff45bbdf2d6416dd5994729"
+Message-Id: <E1HgleI-0005yc-8g@cp.travelvideostore.com>
+Date: Wed, 25 Apr 2007 13:51:26 -0400
+
+
+--=_ce828d96bff45bbdf2d6416dd5994729
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+AVSCode: 03650B0223092744:YYYM:100528238729:
+Address: Matches Address on File
+ZipCode: Matches Zipcode on File
+CardCode: Matches cardcode on File
+Order #:134179
+
+Middle Credit Card Numbers: 84109460
+
+
+--=_ce828d96bff45bbdf2d6416dd5994729
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+AVSCode: 03650B0223092744:YYYM:100528238729:<br>Address: Matches Address on=
+ File<br>ZipCode: Matches Zipcode on File<br>CardCode: Matches cardcode on =
+File<br>Order #:134179<br><br>Middle Credit Card Numbers: 84109460<br><br>
+--=_ce828d96bff45bbdf2d6416dd5994729--
+

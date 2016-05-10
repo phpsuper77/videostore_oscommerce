@@ -1,0 +1,38 @@
+<!-- squaretrade //-->
+          <tr>
+            <td>
+<?php
+  $info_box_contents = array();
+  $info_box_contents[] = array('text' => 'Proud Member of');
+
+  new infoBoxHeading($info_box_contents, false, false);
+
+  $info_box_contents = array();
+  $info_box_contents[] = array('text' => '<!-- SquareTrade Seal //-->
+<!-----	enter the link for the suaretrade seal here//--->
+<center>
+<a href="http://www.bbbonline.org/cks.asp?id=1050708134214"><img src="images/ReliabilitySeal.gif" border="0" title="Better Business Bureau" TARGET="_new"></a>');
+if ($_SESSION['affiliate_id_banner'] <> "115087")
+{
+	$info_box_contents[] = array('text' => '<a href="http://www.astanet.com"><img src="images/ASTA-LOGO.gif" border="0"   title="American Society of Travel Agents - Integrity in Travel" TARGET="_new"></a>
+	<a href="http://www.nacta.com"><img src="images/NACTA_LOGO.jpg" border="0"   title="National Association of Commisioned Travel Agents" TARGET="_blank"></a>
+	<a href="http://www.cruising.org"><img src="images/CLIA_logo.gif" border="0"  title="Cruise Line Industry Association" TARGET="_blank"></a>');
+}
+$info_box_contents[] = array('text' => '<a href="http://www.ala.org"><img src="images/logos/ala_logo.jpg" border="0"  title="American Library Association" TARGET="_new"></a>
+
+<a href="http://www.ossn.com"><img src="images/ossn_logo.jpg" border="0"  title=" Outside Sales Support Network - The International Association for Independent Contract and Home Based Agencies" TARGET="_new"></a>
+
+<a href="http://www.travelfilms.org"><img src="images/logos/logo_tracs.gif" border="0"  title=" Travel Adventure Cinema Society" TARGET="_new"></a>
+<a href="http://www.istte.org"><img src="images/logos/logo_istte.gif" border="0"  " title=" International Society of Travel and Tourism Educators " TARGET="_new"></a>
+
+
+
+</center>
+
+<!-- SquareTrade Seal //-->');
+
+  new infoBox($info_box_contents);
+?>
+            </td>
+          </tr>
+<!-- squaretrade //-->

@@ -1,0 +1,4 @@
+Order Number: {ORDER_ID}
+{ORDER_TOTALS}
+-------
+Payment Method: {PAYMENT_METHOD}

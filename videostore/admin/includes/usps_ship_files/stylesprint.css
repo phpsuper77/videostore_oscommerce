@@ -1,0 +1,229 @@
+/ * Printer Friendly Settings */
+
+/* Hide Image */
+img.nodisplay {
+	display: none;	
+}
+
+td.nodisplay {
+	display: none;	
+}
+
+.pfPrintOnly {
+    display: inline;	
+}
+/* Hide a row */
+.prntfriendlynoprnt {
+    display: none;	
+}
+.borderLeftGrey {
+	border-left:1px solid #FFFFFF
+}
+.borderRightGrey {
+	border-right:1px solid #FFFFFF
+}
+.pfGreyDot {
+	background-image:none;
+}
+.pfGreyBackground {
+	background-color: none;
+}
+.pfSmallWidth24 {
+	width: 0
+}
+.pfSmallFont {
+	font-size: 10px;
+}
+.pfClearBoxMain {
+	border: 0px #999999 solid; clip:    rect(   ); background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: 12px; float: left; height: auto; width: auto; padding-right: 5px; padding-left: 5px
+}
+/* Hide Title Bar */
+div.titlebars {
+    display: none;	
+}
+
+/* Hide Footer Service Bar */
+div.footerservices {
+    display: none;	
+}
+
+/* Hide Footer */
+div.foot {
+    display: none;	
+}
+
+/* Page Formatting */
+.navLinkGray {
+	FONT: bold 13px Arial, Helvetica, sans-serif; COLOR: #999999
+}
+.navLinkChildGray {
+	FONT: bold 10px Arial, Helvetica, sans-serif; COLOR: #cccccc
+}
+.footernpa {
+	FONT: bold 14px Arial, Helvetica, sans-serif; COLOR: #ffffff
+}
+.navLink1 {
+	FONT: bold 13px Arial, Helvetica, sans-serif; COLOR: #ffffff
+}
+A.navlink1:hover {
+	COLOR: #ffff99
+}
+.footernormal {
+    display: none;
+}
+.redbar {
+	FONT: bold 11px Arial, Helvetica, sans-serif; COLOR: #ffffff
+}
+.navLinkChild {
+	FONT: bold 10px Arial, Helvetica, sans-serif; COLOR: #ffffff
+}
+.footer {
+	FONT: bold 10px Arial, Helvetica, sans-serif; COLOR: #ffffff
+}
+.narrowText {
+	FONT: 16px Arial
+}
+.smnarrowText {
+	FONT: 13px Arial
+}
+.mainTextbold {
+	FONT: bold 12px Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.mainText {
+	FONT: 12px Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.smTableTextbold {
+	FONT: bold 11px Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.smgrayTableTextbold {
+	FONT: bold 11px Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.smTableText {
+	FONT: 11px Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.smbarkerText {
+	FONT: bold 10px Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.smmainText {
+	FONT: 10px Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.smmainTextblue {
+	FONT: 10px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.redheadlineText {
+	FONT: bold 18px Arial, Helvetica, sans-serif; COLOR: #cc0000
+}
+.mainTextboldRed {
+	FONT: bold 12px Arial, Helvetica, sans-serif; COLOR: #cc0000
+}
+.mainTextRed {
+	FONT: 12px Arial, Helvetica, sans-serif; COLOR: #cc0000
+}
+.smmainTextRed {
+	FONT: 11px Arial, Helvetica, sans-serif; COLOR: #cc0000
+}
+.redbarkerText {
+	FONT: bold 11px Arial, Helvetica, sans-serif; COLOR: #cc0000
+}
+.rednarrowText {
+	FONT: bold 13px Arial; COLOR: #cc3333
+}
+.secondaryHeadlineItalicText {
+	FONT: bold italic 16px Arial; COLOR: #0066cc
+}
+.secondaryHeadlineText {
+	FONT: bold 16px Arial; COLOR: #0066cc
+}
+.tertiaryHeadlineItalicText {
+	FONT: bold italic 13px Arial; COLOR: #0066cc
+}
+.tertiaryHeadlineText {
+	FONT: bold 13px Arial; COLOR: #0066cc
+}
+.navLink3 {
+	FONT: bold 10px Arial, Helvetica, sans-serif; COLOR: #0066cc
+}
+A.navlink3:hover {
+	COLOR: #003399
+}
+.blueheadlineText {
+	FONT: bold 21px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.navLink2 {
+	FONT: bold 13px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+A.navlink2:hover {
+	COLOR: #ffff99
+}
+.blueCallout {
+	FONT: bold 13px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.blueCalloutPlain {
+	FONT: 13px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.blueText {
+	FONT: 12px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.blueTextbold {
+	FONT: bold 12px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.bluebarbold {
+	FONT: bold 11px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.utilitybar {
+	FONT: bold 10px Arial, Helvetica, sans-serif; COLOR: #003399
+}
+.smallgraytext {
+	FONT: bold 10px Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.headlineText {
+	FONT: bold 13px Arial, Helvetica, sans-serif; COLOR: #336699
+}
+A.headlineText:link {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+A.headlineText:visited {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+A.headlineText:active {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+.headlineLink {
+	FONT: bold 13px Arial, Helvetica, sans-serif; COLOR: #336699
+}
+.subHeaderbold {
+	FONT: bold 12px Arial, Helvetica, sans-serif; COLOR: #336699
+}
+.barkerText {
+	FONT: 11px Arial, Helvetica, sans-serif; COLOR: #336699
+}
+.barkerTextgray {
+	FONT: 11px Arial, Helvetica, sans-serif; COLOR: #999999
+}
+.box {
+	border: 1px #CCCCCC solid; clip:    rect(   ); background-color: #FFFFCC; font-family: Arial, Helvetica, sans-serif; font-size: 10px; height: 18px; width: auto; padding-right: 5px; padding-left: 5px
+}
+.ltbluebox {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 10px; FLOAT: left; PADDING-BOTTOM: 1px; BORDER-LEFT: #cccccc 1px solid; WIDTH: auto; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: auto; BACKGROUND-COLOR: #f0f6fc
+}
+.bigbox {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 8px; FONT-SIZE: 12px; FLOAT: left; PADDING-BOTTOM: 1px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 90%; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: auto; BACKGROUND-COLOR: #ffffcc
+}
+.grayborder {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 10px; FLOAT: left; BORDER-LEFT: #cccccc 1px solid; WIDTH: 80%; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: auto
+}
+.smallbox {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 10px; FLOAT: left; BORDER-LEFT: #cccccc 1px solid; WIDTH: 35%; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: auto; BACKGROUND-COLOR: #ffffcc
+}
+.darkbox {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 10px; FLOAT: left; BORDER-LEFT: #999999 1px solid; WIDTH: 90%; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: auto; BACKGROUND-COLOR: #ffffcc
+}
+.darkbigbox {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 8px; FONT-SIZE: 12px; FLOAT: left; PADDING-BOTTOM: 1px; BORDER-LEFT: #999999 1px solid; WIDTH: 90%; PADDING-TOP: 1px; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: auto; BACKGROUND-COLOR: #ffffcc
+}
+.smgrayTableText {
+	FONT: 11px Arial, Helvetica, sans-serif; COLOR: #666666
+}
+.tinyText {
+	FONT: 9px Arial, Helvetica, sans-serif; COLOR: #000000
+}

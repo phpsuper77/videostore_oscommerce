@@ -1,0 +1,19 @@
+{SALUTATION}
+
+We welcome you to {STORE_NAME}!
+
+You can now take part in the various services we have to offer you. Some of these services include:
+* Permanent Cart - Any products added to your online cart remain there until you remove them, or check them out.
+* Address Book - We can now deliver your products to another address other than yours! This is perfect to send birthday gifts direct to the birthday-person themselves.
+* Order History - View your history of purchases that you have made with us.
+* Products Reviews - Share your opinions on products with our other customers.
+
+{LOGIN_INFO}
+
+For help with any of our online services, please email the store-owner: {STORE_OWNER_EMAIL_ADDRESS}.
+
+Note: This email address was given to us by one of our customers. If you did not signup to be a member, please send an email to {STORE_OWNER_EMAIL_ADDRESS}.
+
+{CCGV}
+
+{POINTS_AND_REWARDS}

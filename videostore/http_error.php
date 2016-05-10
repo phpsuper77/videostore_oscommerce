@@ -1,0 +1,165 @@
+<?php
+/*
+  $Id: http_error.php,v 1.3 2004/06/30 20:55:23 chaicka Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2004 osCommerce
+
+  Released under the GNU General Public License
+*/
+  require('includes/application_top.php');
+
+  require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_HTTP_ERROR);
+  require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_ADVANCED_SEARCH);
+
+  switch ($HTTP_GET_VARS['error_id']) {
+     case '400':  $error_text = ERROR_400_DESC; break;
+     case '401':  $error_text = ERROR_401_DESC; break;
+     case '403':  $error_text = ERROR_403_DESC; break;
+     case '404':  $error_text = ERROR_404_DESC; break;
+     case '405':  $error_text = ERROR_405_DESC; break;
+     case '408':  $error_text = ERROR_408_DESC; break;
+     case '415':  $error_text = ERROR_415_DESC; break;
+     case '416':  $error_text = ERROR_416_DESC; break;
+     case '417':  $error_text = ERROR_417_DESC; break;
+     case '500':  $error_text = ERROR_500_DESC; break;
+     case '501':  $error_text = ERROR_501_DESC; break;
+     case '502':  $error_text = ERROR_502_DESC; break;
+     case '503':  $error_text = ERROR_503_DESC; break;
+     case '504':  $error_text = ERROR_504_DESC; break;
+     case '505':  $error_text = ERROR_505_DESC; break;
+     default:     $error_text = UNKNOWN_ERROR_DESC; break;
+  }
+
+// Send the HTTP Error to Store Owner
+  if (EMAIL_HTTP_ERROR == 'true') {
+    tep_mail(STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, EMAIL_TEXT_SUBJECT, sprintf(EMAIL_BODY, HTTP_SERVER, $HTTP_GET_VARS['error_id'], $error_text, date("m/d/Y G:i:s"), HTTP_SERVER . $REQUEST_URI, $REMOTE_ADDR, $HTTP_USER_AGENT, $HTTP_REFERER), STORE_OWNER, STORE_OWNER_EMAIL_ADDRESS, '');
+  }
+
+// Save the HTTP Error Report to disk
+  if (STORE_HTTP_ERROR == 'true') {
+    error_log(strftime(STORE_PARSE_DATE_TIME_FORMAT) . ',' . $HTTP_GET_VARS['error_id'] . ',' . HTTP_SERVER . $REQUEST_URI . ',' . $REMOTE_ADDR . ',' . $HTTP_USER_AGENT . ',' . $HTTP_REFERER . "\n", 3, STORE_HTTP_ERROR_LOG);
+  }
+
+?>
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html <?php echo HTML_PARAMS; ?>>
+<head>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-195024-1";
+urchinTracker();
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<title><?php echo TITLE; ?></title>
+<base href="<?php echo (getenv('HTTPS') == 'on' ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
+<link rel="stylesheet" type="text/css" href="/stylesheet.css">
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<!-- header //-->
+<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+<!-- header_eof //-->
+
+<!-- body //-->
+<table border="0" width="100%" cellspacing="3" cellpadding="3">
+  <tr>
+    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
+<!-- left_navigation //-->
+<?php require(DIR_WS_INCLUDES . 'column_left.php'); ?>
+<!-- left_navigation_eof //-->
+    </table></td>
+<!-- body_text //-->
+    <td width="100%" valign="top"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="pageHeading"><?php echo sprintf(HEADING_TITLE, $HTTP_GET_VARS['error_id']); ?></td>
+            
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+      </tr>
+      <tr>
+        <td><br><table border="0" width="100%" cellspacing="0" cellpadding="2">
+          <tr>
+            <td class="main"><?php echo sprintf(TEXT_INFORMATION, $error_text)?></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+ <?php //this is where I added the advanced Search
+  echo tep_draw_form('advanced_search', tep_href_link(FILENAME_ADVANCED_SEARCH_RESULT, '', 'NONSSL', false), 'get', 'onSubmit="return check_form(this);"') . tep_hide_session_id(); ?><table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td></td>
+                      </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+      </tr>
+<?php
+  if ($messageStack->size('search') > 0) {
+?>
+      <tr>
+        <td><?php echo $messageStack->output('search'); ?></td>
+      </tr>
+      <tr>
+        <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+      </tr>
+<?php
+  }
+?>
+      <tr>
+        <td>
+<?php
+  $info_box_contents = array();
+  $info_box_contents[] = array('text' => HEADING_SEARCH_CRITERIA);
+
+  new infoBoxHeading($info_box_contents, true, true);
+
+  $info_box_contents = array();
+  $info_box_contents[] = array('text' => tep_draw_input_field('keywords', '', 'style="width: 100%"'));
+
+  new infoBox($info_box_contents);
+?>
+        </td>
+      </tr>
+      <tr>
+        <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+          <tr>
+                        <td class="smallText" align="right"><?php echo tep_image_submit('button_search.gif', IMAGE_BUTTON_SEARCH); ?></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><?php echo tep_draw_separator('pixel_trans.gif', '100%', '10'); ?></td>
+      </tr>
+
+     </table></form></td>
+<!-- body_text_eof //-->
+    <td width="<?php echo BOX_WIDTH; ?>" valign="top"><table border="0" width="<?php echo BOX_WIDTH; ?>" cellspacing="0" cellpadding="2">
+<!-- right_navigation //-->
+<?php require(DIR_WS_INCLUDES . 'column_right.php'); ?>
+<!-- right_navigation_eof //-->
+    </table></td>
+  </tr>
+</table>
+<!-- body_eof //-->
+
+<!-- footer //-->
+<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
+<!-- footer_eof //-->
+<br>
+</body>
+</html>
+<?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>

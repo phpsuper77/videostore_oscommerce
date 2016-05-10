@@ -1,0 +1,25 @@
+{STORE_NAME}
+------------------------------------------------------
+Order Number: {ORDER_ID}
+Detailed Invoice: {INVOICE_URL}
+Date Ordered: {DATE_LONG}
+Comments: {COMMENTS}
+Comments Slip: {COMMENTS_SLIP}
+
+Products
+------------------------------------------------------
+{PRODUCTS}
+------------------------------------------------------
+{ORDER_TOTALS}
+
+Delivery Address
+------------------------------------------------------
+{DELIVERY_ADDRESS}
+
+Billing Address
+------------------------------------------------------
+{BILLING_ADDRESS}
+
+Payment Method
+------------------------------------------------------
+{PAYMENT_METHOD}

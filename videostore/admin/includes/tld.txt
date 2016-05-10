@@ -1,0 +1,35 @@
+# $Id: tld.txt,v 1.2 2003/02/10 22:30:57 hpdl Exp $
+#
+# osCommerce, Open Source E-Commerce Solutions
+# http://www.oscommerce.com
+#
+# Copyright (c) 2003 osCommerce
+#
+# Released under the GNU General Public License
+#
+
+
+arpa  #  Address and Routing Parameter Area
+aero  #  air-transport industry
+asia # Pending
+biz  #  businesses
+cat # Pending
+com  #  commercial
+coop  #  cooperative associations
+edu  #  educational institutions
+gov  #  US government
+info  #  general information
+int  #  international governmental bodies
+jobs  #  human resource managers
+mail # Pending
+mil  #  US military
+mobi # Mobile
+museum  #  museums
+name  #  individuals
+net  #  net
+org  #  (less commercial) organizations
+post # Pending
+pro  #  credentialed professionals
+tel # Pending Universal Telephone
+travel  #  travel and tourism industry
+xxx # Pending Adult Industry

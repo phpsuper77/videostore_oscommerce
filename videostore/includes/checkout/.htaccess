@@ -1,0 +1,9 @@
+<Files *.*>
+  Order Allow,Deny
+  Allow from all
+</Files>
+<IfModule mod_setenvif.c>
+  <IfModule mod_deflate.c>
+    SetEnvIfNoCase REQUEST_URI .(?:php)$ no-gzip dont-vary
+  </IfModule>
+</IfModule>

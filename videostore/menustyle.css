@@ -1,0 +1,48 @@
+.dropmenu_menuhdr {
+   position: absolute;
+   left: -1500px;
+   visibility: visible;
+   z-index: 101;
+   float: left;
+   width: 121px;
+
+   border-width: 1px;
+   border-style: solid;
+   border-color: #B42BFF;	
+   background-color: #FFD900;
+}
+.dropmenu_menuhdr ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+.dropmenu_menuhdr li {
+   display: inline;
+}
+.dropmenu_menuhdr a, .dropmenu_menuhdr a:visited, .dropmenu_menuhdr a:active {
+   display: block;
+   width: 117px;
+
+   padding: 0px;
+   margin: 0px;
+   font-family: Verdana;
+   font-size: 10px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+
+   color: #000000;
+   background-color: #FFD900;
+}
+.dropmenu_menuhdr a:hover {
+   padding: 0px;
+   margin: 0px;
+   font-family: Verdana;
+   font-size: 10px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+
+   color: #000000;
+   background-color: #FFDE80;
+}

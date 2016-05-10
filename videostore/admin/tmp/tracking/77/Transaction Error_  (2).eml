@@ -1,0 +1,39 @@
+Return-path: <terrae2@travelvideostore.com>
+Envelope-to: creditcardreceipt@travelvideostore.com,
+ creditcardreceipt@travelvideostore.com
+Delivery-date: Thu, 15 Mar 2007 20:35:43 -0400
+Received: from apache by cp.travelvideostore.com with local (Exim 4.42)
+	id 1HS0Q3-0001O7-La; Thu, 15 Mar 2007 20:35:43 -0400
+To: creditcardreceipt@travelvideostore.com
+Subject: Transaction Error: 
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Transaction service
+To: CreditCardReceipt <creditcardreceipt@travelvideostore.com>
+Message-Id: <E1HS0Q3-0001O7-La@cp.travelvideostore.com>
+Date: Thu, 15 Mar 2007 20:35:43 -0400
+
+
+<table width="800" border="1"><tr><td>array(10) {
+  ["payment"]=>
+  string(12) "linkpointms1"
+  ["cc_owner"]=>
+  string(14) "maurice nirens"
+  ["cc_number"]=>
+  string(16) "american express"
+  ["cc_expires_month"]=>
+  string(2) "12"
+  ["cc_expires_year"]=>
+  string(2) "08"
+  ["cc_checkcode"]=>
+  string(4) "9968"
+  ["gv_redeem_code"]=>
+  string(0) ""
+  ["comments"]=>
+  string(0) ""
+  ["x"]=>
+  string(2) "66"
+  ["y"]=>
+  string(2) "11"
+}
+</td></tr></table><br><br><b>Reason:</b> The first four digits of the number entered are: <br>If that number is correct, we do not accept that type of credit card.<br>If it is wrong, please try again.

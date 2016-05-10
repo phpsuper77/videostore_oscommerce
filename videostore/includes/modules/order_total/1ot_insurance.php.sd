@@ -1,0 +1,90 @@
+<?php
+/*
+  Shipping Insurance Module
+  ot_insurance.php, v 1.0 2003/12/03
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2002 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+  class ot_insurance {
+    var $title, $output;
+
+    function ot_insurance() {
+      $this->code = 'ot_insurance';
+      $this->title = MODULE_ORDER_TOTAL_INSURANCE_TITLE;
+      $this->description = MODULE_ORDER_TOTAL_INSURANCE_DESCRIPTION;
+      $this->enabled = MODULE_ORDER_TOTAL_INSURANCE_STATUS;
+      $this->sort_order = MODULE_ORDER_TOTAL_INSURANCE_SORT_ORDER;
+
+      $this->output = array();
+    }
+
+    function process() {
+      global $order, $currencies;
+
+      if (MODULE_ORDER_TOTAL_INSURANCE_USE == 'true') {
+        switch (MODULE_ORDER_TOTAL_INSURANCE_DESTINATION) {
+          case 'national':
+            if ($order->delivery['country_id'] == STORE_COUNTRY) $pass = true; break;
+          case 'international':
+            if ($order->delivery['country_id'] != STORE_COUNTRY) $pass = true; break;
+          case 'both':
+            $pass = true; break;
+          default:
+            $pass = false; break;
+        }
+
+        if ($pass == true) {
+          $tax = tep_get_tax_rate(MODULE_ORDER_TOTAL_INSURANCE_TAX_CLASS);
+$how_often = ceil(($order->info['total']- $order->info['tax'] - MODULE_ORDER_TOTAL_INSURANCE_OVER)/MODULE_ORDER_TOTAL_INSURANCE_INCREMENT);
+         
+          $order->info['tax'] += tep_calculate_tax((MODULE_ORDER_TOTAL_INSURANCE_FEE * $how_often), $tax);
+          $order->info['tax_groups']["{$tax}"] += tep_calculate_tax((MODULE_ORDER_TOTAL_INSURANCE_FEE * $how_often), $tax);
+          $order->info['total'] += (MODULE_ORDER_TOTAL_INSURANCE_FEE * $how_often) + tep_calculate_tax(MODULE_ORDER_TOTAL_INSURANCE_FEE, $tax);
+          $this->output[] = array('title' => $this->title . ':',
+                                  'text' => $currencies->format(tep_add_tax((MODULE_ORDER_TOTAL_INSURANCE_FEE * $how_often), $tax), true, $order->info['currency'], $order->info['currency_value']),
+                                  'value' => tep_add_tax((MODULE_ORDER_TOTAL_INSURANCE_FEE * $how_often), $tax));
+        }
+      }
+    }
+
+    function check() {
+      if (!isset($this->check)) {
+        $check_query = tep_db_query("select configuration_value from " . TABLE_CONFIGURATION . " where configuration_key = 'MODULE_ORDER_TOTAL_INSURANCE_STATUS'");
+        $this->check = tep_db_num_rows($check_query);
+      }
+
+      return $this->check;
+    }
+
+    function keys() {
+      return array('MODULE_ORDER_TOTAL_INSURANCE_STATUS', 'MODULE_ORDER_TOTAL_INSURANCE_SORT_ORDER', 'MODULE_ORDER_TOTAL_INSURANCE_USE', 'MODULE_ORDER_TOTAL_INSURANCE_OVER', 'MODULE_ORDER_TOTAL_INSURANCE_INCREMENT', 'MODULE_ORDER_TOTAL_INSURANCE_FEE', 'MODULE_ORDER_TOTAL_INSURANCE_DESTINATION', 'MODULE_ORDER_TOTAL_INSURANCE_TAX_CLASS');
+    }
+
+    function install() {
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Display Shipping Insurance', 'MODULE_ORDER_TOTAL_INSURANCE_STATUS', 'true', 'Do you want to display the Shipping Insurance?', '6', '1','tep_cfg_select_option(array(\'true\', \'false\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) values ('Sort Order', 'MODULE_ORDER_TOTAL_INSURANCE_SORT_ORDER', '4', 'Sort order of display.', '6', '2', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Use Shipping Insurance?', 'MODULE_ORDER_TOTAL_INSURANCE_USE', 'false', 'Do you want to add [require] shipping insurance?', '6', '3', 'tep_cfg_select_option(array(\'true\', \'false\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, date_added) values ('Amount Exempt From Fee', 'MODULE_ORDER_TOTAL_INSURANCE_OVER', '100', 'Apply insurance fee ON the amount of order over <b>how much?</b> (For  example, UPS includes insurance on value under $100, so if you say 100 the insurance will be on the total less $100.)', '6', '4', 'currencies->format', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, date_added) values ('Increment Amount', 'MODULE_ORDER_TOTAL_INSURANCE_INCREMENT', '100', 'For each <b>how many dollars,</b> ie. the increment amount,  of the total (e.g. 100 here and .50 for the rate below would mean 50 cents fee for every $100 of the amount to be insured).', '6', '4', 'currencies->format', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, date_added) values ('Insurance Rate', 'MODULE_ORDER_TOTAL_INSURANCE_FEE', '.50', 'The amount charged per Increment Amount above.', '6', '5', 'currencies->format', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) values ('Apply Insurance Fee To Which Orders', 'MODULE_ORDER_TOTAL_INSURANCE_DESTINATION', 'both', 'Apply insurance fee for orders sent to the set destination.', '6', '6', 'tep_cfg_select_option(array(\'national\', \'international\', \'both\'), ', now())");
+      tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) values ('Tax Class', 'MODULE_ORDER_TOTAL_INSURANCE_TAX_CLASS', '0', 'Use the following tax class on the insurance fee.', '6', '7', 'tep_get_tax_class_title', 'tep_cfg_pull_down_tax_classes(', now())");
+    }
+
+    function remove() {
+      $keys = '';
+      $keys_array = $this->keys();
+      for ($i=0; $i<sizeof($keys_array); $i++) {
+        $keys .= "'" . $keys_array[$i] . "',";
+      }
+      $keys = substr($keys, 0, -1);
+
+      tep_db_query("delete from " . TABLE_CONFIGURATION . " where configuration_key in (" . $keys . ")");
+    }
+  }
+?>

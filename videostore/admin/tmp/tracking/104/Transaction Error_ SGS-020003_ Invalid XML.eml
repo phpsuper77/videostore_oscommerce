@@ -1,0 +1,79 @@
+Return-path: <terrae2@travelvideostore.com>
+Envelope-to: creditcardreceipt@travelvideostore.com,
+ creditcardreceipt@travelvideostore.com
+Delivery-date: Wed, 25 Apr 2007 13:50:24 -0400
+Received: from apache by cp.travelvideostore.com with local (Exim 4.42)
+	id 1HgldC-0005uy-U6; Wed, 25 Apr 2007 13:50:24 -0400
+To: creditcardreceipt@travelvideostore.com
+Subject: Transaction Error: SGS-020003: Invalid XML
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Transaction service
+To: CreditCardReceipt <creditcardreceipt@travelvideostore.com>
+Message-Id: <E1HgldC-0005uy-U6@cp.travelvideostore.com>
+Date: Wed, 25 Apr 2007 13:50:18 -0400
+
+
+<table width="800" border="1"><tr><td>array(30) {
+  ["host"]=>
+  string(17) "secure.linkpt.net"
+  ["port"]=>
+  string(4) "1129"
+  ["storename"]=>
+  string(6) "884848"
+  ["keyfile"]=>
+  string(29) "includes/linkpoint/884848.pem"
+  ["result"]=>
+  string(4) "LIVE"
+  ["Ip"]=>
+  NULL
+  ["userid"]=>
+  NULL
+  ["cardNumber"]=>
+  string(0) ""
+  ["cardExpMonth"]=>
+  NULL
+  ["cardExpYear"]=>
+  NULL
+  ["bname"]=>
+  NULL
+  ["phone"]=>
+  NULL
+  ["comments"]=>
+  NULL
+  ["baddr1"]=>
+  NULL
+  ["addrnum"]=>
+  NULL
+  ["bcity"]=>
+  NULL
+  ["bstate"]=>
+  NULL
+  ["bzip"]=>
+  NULL
+  ["bcountry"]=>
+  string(2) "US"
+  ["sname"]=>
+  NULL
+  ["saddr1"]=>
+  NULL
+  ["scity"]=>
+  NULL
+  ["sstate"]=>
+  NULL
+  ["szip"]=>
+  NULL
+  ["scountry"]=>
+  string(2) "US"
+  ["oid"]=>
+  NULL
+  ["chargetotal"]=>
+  NULL
+  ["subtotal"]=>
+  NULL
+  ["shipping"]=>
+  NULL
+  ["tax"]=>
+  NULL
+}
+</td></tr></table><br><br><b>Reason:</b> SGS-020003: Invalid XML

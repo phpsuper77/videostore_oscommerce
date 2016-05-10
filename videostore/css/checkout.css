@@ -1,0 +1,448 @@
+/*
+ * Dynamo Checkout by Dynamo Effects
+ * Copyright 2008 - Dynamo Effects.  All Rights Reserved
+ * http://www.dynamoeffects.com
+ */
+label {text-align: left}
+.main {color: #000}
+div#ERROR_payment, div#ERROR_shipping{  text-align:center;   width:100%;   padding:10px 0 10px 0;   border:2px solid #96171A;   background-color:#F00;   color:#FFF; display:none}
+iframe#checkout-gateway{  width:0; height:0;   visibility:hidden}
+.checkout-js-required{  position:relative;   margin:120px auto;   padding:10px;   border:2px solid #F00;   visibility:visible;   font:12px arial,verdana,sans-serif}
+.checkout-js-required h2{  font-size:18px;   margin:4px}
+div#checkout-shipping-quotes{  font:14px arial;   color:#787878;   font-weight:bold;   text-align:center}
+div#checkout-shipping-quotes table{  width:100%;   text-align:left}
+span.pageHeading{  font-size:16px}
+.progress_bar{  position:relative;   width:476px;   height:57px;   border:1px solid #c2c2c2;   padding:1px 2px 3px 1px;   text-align:left}
+.progress_bar .progress{  width:0;   background:#2E9127 url(../images/progress-bar-bg.gif) repeat-x;   padding: 1px 0px 1px 1px; height:100%;   text-align:left}
+.progress_status{  font:11px verdana;   color:#96171A;   font-weight:bold;   padding-top:10px;   padding-bottom:4px}
+.checkout-input-error{  border:2px solid #F00}
+.checkout-form-error{color:#F00; font:11px arial; font-weight:bold; clear:left}
+.checkout-spacing-1{  height:10px;   font-size:1px}
+.checkout-spacing-2{  height:10px;   font-size:1px}
+.checkout-input-text, .checkout-select{  font:12px arial}
+.checkout-input-text{  padding:2px}
+select.checkout-select{  padding:1px}
+.checkout-field-short{  width:130px;   padding:2px}
+.checkout-hidden{  display:none}
+.pageHeading{  background:url(../images/padlock.png) 10px 10px no-repeat;  height:42px;  padding:14px 10px 0px 45px}
+h2{ font:14px arial,sans-serif;  font-weight:bold;  margin:0}
+.checkout-js-pane{ height:184px;  overflow-y:scroll;  text-align:left;  border:1px solid #000;  padding:8px}
+.checkout-column-right{ width:220px;  padding-right:10px}
+.checkout-column-left{ padding:0 10px 10px 10px}
+.productListing-heading{ font-size:11px}
+.checkout-productListing-heading{ font:14px arial;  font-weight:bold;  color:#fff;  background-color:#b6b7cb}
+.checkout-productListing-heading a{ color:#fff;  font-size:12px}
+.checkout-productListing-data{ padding:10px;  color: #000; background-color:#fff}
+.checkout-dashed-line{ border-top:1px dashed #000}
+.checkout-loading{ padding:30px;  text-align:center}
+.checkout-returning-customer{ border:1px solid #b6b7cb;  background-color:#fff;  padding:20px;  text-align:center;  width:100%}
+#checkout-login h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#checkout-login label {
+  font-weight: bold;
+  width: 100px;
+}
+#checkout-login .checkout-input-text {
+  width: 180px;
+  font: 14px Verdana, Arial, sans-serif;
+  font-weight: bold;
+  padding: 2px;
+}
+#checkout-terms {
+  padding: 10px;
+}
+#checkout-coupon-status{ font:11px arial,verdana,sans-serif;text-align:left}
+.checkout-order-total-wrapper{text-align:right; }
+.checkout-order-total{text-align:right;float: right;width:300px;padding-right:40px;}
+.checkout-msg-success{ color:#090;  font-weight:bold;  text-align:left;  width:100%}
+.checkout-msg-failure{ color:#900;  font-weight:bold;  text-align:left;  width:100%}
+.checkout-order-total table tr td{ padding:4px}
+.checkout-order-total table tr td.ot_total{ font-weight:bold;  font-size:16px}
+span.main{ font-family:Verdana,Arial,sans-serif;  font-size:11px;  line-height:1.5}
+label{display:block; float:left; padding:5px 5px 1px 5px; font-weight:bold; font-size:11px; color:#444}
+label.optional{ font-weight:normal}
+.checkout-tip{ clear:left;  text-align: left; padding-left:8px;  font:10px arial;  font-style:italic}
+#bill_firstname, #ship_firstname{ width:120px}
+#email_address{ width:260px}
+#bill_country, #ship_country{ width:280px}
+#bill_street_address, #bill_suburb, #ship_street_address, #ship_suburb{width:268px}
+#bill_city, #ship_city{ width:110px}
+#dob {width:120px;}
+label.bill_state, label.ship_state{ display:block;  position:relative}
+.state_container{ position:relative;  float:left}
+.state_container label {clear: left; display: block}
+#bill_state_blk {display: block}
+#bill_postcode, #ship_postcode{ width:80px}
+.checkout-highlight{ background:#f8f8f9}
+.payment-row, .shipping-row{ cursor:pointer;  *cursor:hand}
+.shipping-row{ width:100%;  position:relative;  padding:2px}
+.shipping-row .title {padding-right: 60px}
+.shipping-row .cost{ position:absolute;  top:0;  right:2px}
+#dynamo-effects-logo {float: left}
+.messageStackError, .messageStackWarning {background-color: transparent;color:#fff}
+ul.checkout-payment-methods {list-style:none;margin:0;padding:0}
+ul.checkout-payment-methods li {padding-top:10px}
+ul.checkout-payment-methods li a.payment-title {font: 14px arial;font-weight:bold;text-decoration:none}
+ul.checkout-payment-methods li a.payment-title:hover {cursor:pointer;*cursor:hand;color:#000}
+ul.checkout-payment-methods li div {padding-left:20px}
+div.terms-container {width: 640px;height: 300px;background-color:#b6b7cb;padding:10px}
+div.terms-container textarea {border:1px solid #000;height:270px}
+div.terms-container .button {padding-top: 4px;text-align:right;}
+/*
+ * FancyBox - jQuery Plugin
+ * Simple and fancy lightbox alternative
+ *
+ * Copyright (c) 20010 Janis Skarnelis
+ * Examples and documentation at: http://fancybox.net
+ *
+ * Version: 1.3.0 (02/02/2010)
+ * Requires: jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+ 
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	width: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	background: transparent;
+	z-index: 1104;
+	display: none;
+}
+
+* html #fancybox-loading {	/* IE6 */
+	position: absolute;
+	margin-top: 0;
+}
+
+#fancybox-loading div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 480px;
+	background: transparent url('../images/fancy_loading.png') no-repeat;
+}
+
+#fancybox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	z-index: 1100;
+	display: none;
+}
+
+* html #fancybox-overlay {	/* IE6 */
+	position: absolute;
+	width: 100%;
+}
+
+#fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: auto;
+	display: none;
+}
+
+#fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 20px;
+	z-index: 1101;
+	display: none;
+}
+
+#fancybox-outer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+}
+
+#fancybox-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	overflow: hidden;
+  font: 12px Arial, Verdana, sans-serif;
+  border:1px solid #b6b7cb;
+}
+
+#fancybox-hide-sel-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+#fancybox-close {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 32px;
+	height: 32px;
+	background: url('../images/fancy_close.png') top left no-repeat;
+	cursor: pointer;
+	z-index: 1103;
+	display: none;
+}
+
+#fancybox_error {
+	color: #444;
+	font: normal 12px/20px Arial;
+}
+
+#fancybox-content {
+	height: auto;
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+
+#fancybox-img {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	line-height: 0;
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+
+#fancybox-frame {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
+#fancybox-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: Arial;
+	font-size: 12px;
+	z-index: 1102;
+}
+
+.fancybox-title-inside {
+	padding: 10px 0;
+	text-align: center;
+	color: #333;
+}
+
+.fancybox-title-outside {
+	padding-top: 5px;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+}
+
+.fancybox-title-over {
+	color: #FFF;
+	text-align: left;
+}
+
+#fancybox-title-over {
+	padding: 10px;
+	background: url('../images/fancy_title_over.png');
+	display: block;
+}
+
+#fancybox-title-wrap {
+	display: inline-block;
+}
+
+#fancybox-title-wrap span {
+	height: 32px;
+	float: left;
+}
+
+#fancybox-title-left {
+	padding-left: 15px;
+	background: transparent url('../images/fancy_title_left.png') repeat-x;
+}
+
+#fancybox-title-main {
+	font-weight: bold;
+	line-height: 29px;
+	background: transparent url('../images/fancy_title_main.png') repeat-x;
+	color: #FFF;
+}
+
+#fancybox-title-right {
+	padding-left: 15px;
+	background: transparent url('../images/fancy_title_right.png') repeat-x;
+}
+
+#fancybox-left, #fancybox-right {
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	width: 35%;
+	cursor: pointer;
+	outline: none;
+	background-image: url('blank.gif');
+	z-index: 1102;
+	display: none;
+}
+
+#fancybox-left {
+	left: 0px;
+}
+
+#fancybox-right {
+	right: 0px;
+}
+
+#fancybox-left-ico, #fancybox-right-ico {
+	position: absolute;
+	top: 50%;
+	left: -9999px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	cursor: pointer;
+	z-index: 1102;
+	display: block;
+}
+
+#fancybox-left-ico {
+	background: transparent url('../images/fancy_nav_left.png') no-repeat;
+}
+
+#fancybox-right-ico {
+	background: transparent url('../images/fancy_nav_right.png') no-repeat;
+}
+
+#fancybox-left:hover, #fancybox-right:hover {
+	visibility: visible;    /* IE6 */
+}
+
+#fancybox-left:hover span {
+	left: 20px;
+}
+
+#fancybox-right:hover span {
+	left: auto;
+	right: 20px;
+}
+
+div.fancy-bg {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	z-index: 1001;
+}
+
+div#fancy-bg-n {
+	top: -20px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background: transparent url('../images/fancy_shadow_n.png') repeat-x;
+}
+
+div#fancy-bg-ne {
+	top: -20px;
+	right: -20px;
+	width: 20px;
+	height: 20px;
+	background: transparent url('../images/fancy_shadow_ne.png') no-repeat;
+}
+
+div#fancy-bg-e {
+	top: 0;
+	right: -20px;
+	height: 100%;
+	width: 20px;
+	background: transparent url('../images/fancy_shadow_e.png') repeat-y;
+}
+
+div#fancy-bg-se {
+	bottom: -20px;
+	right: -20px;
+	width: 20px;
+	height: 20px;
+	background: transparent url('../images/fancy_shadow_se.png') no-repeat;
+}
+
+div#fancy-bg-s {
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	background: transparent url('../images/fancy_shadow_s.png') repeat-x;
+}
+
+div#fancy-bg-sw {
+	bottom: -20px;
+	left: -20px;
+	width: 20px;
+	height: 20px;
+	background: transparent url('../images/fancy_shadow_sw.png') no-repeat;
+}
+
+div#fancy-bg-w {
+	top: 0;
+	left: -20px;
+	height: 100%;
+	width: 20px;
+	background: transparent url('../images/fancy_shadow_w.png') repeat-y;
+}
+
+div#fancy-bg-nw {
+	top: -20px;
+	left: -20px;
+	width: 20px;
+	height: 20px;
+	background: transparent url('../images/fancy_shadow_nw.png') no-repeat;
+}
+
+.checkout-lightbox-inline {
+  display: none;
+}
+
+.fancybox-content {
+  padding: 20px;
+}
+
+.checkout-process-content {
+  font-size: 12px;
+}
+
+.checkout-process-content h2 {
+  padding: 10px 0;
+}
+
+.fancybox-close-container {
+  text-align: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Authorization Required</title>
+<meta http-equiv="Refresh" content="2;url=http://www.travelvideostore.com">
+				<?php
+				// osCoders.biz - Analystics - start
+				/*
+				Conditional code added thank to  rrodkey and bfcase
+				IMPORTANT -- IMPORTANT - IMPORTANT
+				You'll need to update the "xxxx-x" in the samples (twice) above with your own Google Analytics account and profile number. 
+				To find this number you can access your personalized tracking code in its entirety by clicking Check Status in the Analytics Settings page of your Analytics account.
+				*/
+				if ($request_type == 'SSL') {
+				?>
+				 <script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+				 </script>
+				 <script type="text/javascript">
+				   _uacct="UA-195024-1";
+				   urchinTracker();
+				 </script>
+				<?php
+				} else {
+				?>
+				 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+				 </script>
+				   <script type="text/javascript">
+				    _uacct="UA-195024-1";
+				    urchinTracker();
+				 </script>
+				<?
+				}
+				// osCoders.biz - Analistics - end
+				?>
+
+</head>
+
+<body>
+<BR><BR><BR>
+<H3><CENTER>AN ERROR HAS OCCURED <BR><BR>IF THIS ERROR CONTINUES <BR><BR>PLEASE CALL OUR TOLL-FREE CUSTOMER SUPPORT LINE AT 1-800-288-5123</CENTER><BR><BR>You are being redirected to our home page</H3>
+</body>
+</html>
+
+<!-- 
+                                                                                                                                                                                                                                                                                                                                                                                                                 
+--> 
+
+
+

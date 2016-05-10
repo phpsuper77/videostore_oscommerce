@@ -1,0 +1,509 @@
+eISBN,CatalogID,Title,Author,Qty Sold,SRP per Unit,SRP Total,AmountOwed
+,7439,A Classical Garden,Global Television,1,29.99,29.99,14.995
+,7118,Acadia New England,Global Television,2,29.99,59.98,29.99
+,6772,"Acropolis Akropolis Athens, Greece",Global Television,3,22.43,67.29,33.645
+,7166,African Balloon Safari,Global Television,1,29.99,29.99,14.995
+,6913,"Agrigento Sicily, Italy",Global Television,1,22.43,22.43,11.215
+,6870,"Aigues-Mortes Provence, France",Global Television,1,22.43,22.43,11.215
+,6933,Aix-en-Provence Ais de Provenca France,Global Television,1,22.43,22.43,11.215
+,7641,Alaska,Worldwide Travel Films,5,37.43,187.15,93.575
+,6997,Algarve Portugal,Global Television,4,29.99,119.96,59.98
+,6865,"Alhambra Granada Andalucia, Spain",Global Television,2,22.43,44.86,22.43
+,7506,Alhambra Spain,Global Television,1,29.99,29.99,14.995
+,7237,Alto Adige / Sudtirolo,Global Television,1,29.99,29.99,14.995
+,6998,Alto Adige Italy,Global Television,4,29.99,119.96,59.98
+,8063,Amazing Thailand,Shidog Films,1,29.93,29.93,14.965
+,6406,Amsterdam,David Mitchell,1,22.49,22.49,11.245
+,7061,Amsterdam Holland,Global Television,4,29.99,119.96,59.98
+,8072,Amsterdam Pride,IndependentKoncepts,1,32.99,32.99,16.495
+,6485,An Adventure of a Different Nature,Arctic Jungle Films,1,29.99,29.99,14.995
+,7062,Andalusia Spain,Global Television,3,29.99,89.97,44.985
+,7510,Angkor,Global Television,1,29.99,29.99,14.995
+,6868,Angkor Wat Cambodia,Global Television,2,22.43,44.86,22.43
+,7168,Arabian Desert Safari,Global Television,1,29.99,29.99,14.995
+,7132,Arches Park Utah,Global Television,2,29.99,59.98,29.99
+,7214,Arizona,Global Television,5,29.99,149.95,74.975
+,6782,"Arkadi Kreta, Greece",Global Television,1,22.43,22.43,11.215
+,6861,"Arles Provence, France",Global Television,1,22.43,22.43,11.215
+,7008,Athens Greece,Global Television,3,29.99,89.97,44.985
+,6468,"Athens, Greece",The Nightingale Company,2,29.99,59.98,29.99
+,5814,Australia's North West,Panorama Australia,1,29.93,29.93,14.965
+,7232,Austria,Global Television,1,29.99,29.99,14.995
+,6748,Avebury Stone Circle England,Global Television,3,22.43,67.29,33.645
+,6847,"Avignon Provence, France",Global Television,1,22.43,22.43,11.215
+,7910,Badlands,Global Television,1,22.43,22.43,11.215
+,7050,Bahamas,Global Television,3,29.99,89.97,44.985
+,7225,Bahamas,Global Television,1,29.99,29.99,14.995
+,6413,Bali,David Mitchell,1,22.49,22.49,11.245
+,7212,Bali,Global Television,1,29.99,29.99,14.995
+,6754,Bali Indonesia,Global Television,2,22.43,44.86,22.43
+,6988,Bali Indonesia,Global Television,3,29.99,89.97,44.985
+,7081,Banepa Valley Nepal,Global Television,2,29.99,59.98,29.99
+,6410,Bangkok,David Mitchell,1,22.49,22.49,11.245
+,7020,Bangkok Thailand,Global Television,3,29.99,89.97,44.985
+,6441,Banos,David Mitchell,1,22.49,22.49,11.245
+,6423,Barcelona,David Mitchell,2,22.49,44.98,22.49
+,7028,Barcelona Spain,Global Television,3,29.99,89.97,44.985
+,7638,Bavaria and the Black Forest,Worldwide Travel Films,1,37.43,37.43,18.715
+,7934,Beautiful Cozumel the Drift Diving Capital of the World,GRK Productions,1,29.93,29.93,14.965
+,6981,Beijing China,Global Television,4,29.99,119.96,59.98
+,7937,Belize Home of the Famous Blue Hole,GRK Productions,1,29.93,29.93,14.965
+,7185,Beneath the Himalayas,Global Television,1,29.99,29.99,14.995
+,7204,Bergensbanen,Global Television,1,29.99,29.99,14.995
+,6446,Berlin,David Mitchell,2,22.49,44.98,22.49
+,7931,Best of Europe Guide,ViewEurope Productions,2,37.43,74.86,37.43
+,7039,Bhaktapur Nepal,Global Television,3,29.99,89.97,44.985
+,6872,Biertan Biyertan Romania,Global Television,2,22.43,44.86,22.43
+,7186,Blue Danube Cruise Wachau,Global Television,1,29.99,29.99,14.995
+,6807,"Blue Mosque Sultan Ahmed Mosque Istanbul, Turkey",Global Television,2,22.43,44.86,22.43
+,7938,Bonaire a Tropical Desert Island,GRK Productions,1,29.93,29.93,14.965
+,6956,Bosra Syria,Global Television,2,22.43,44.86,22.43
+,7047,Boston,Global Television,3,29.99,89.97,44.985
+,7231,Botswana,Global Television,1,29.99,29.99,14.995
+,6533,Branson,USA Travel DVD,3,22.43,67.29,33.645
+,7246,Bretagne,Global Television,1,29.99,29.99,14.995
+,7072,Bretagne France,Global Television,2,29.99,59.98,29.99
+,5787,Brisbane Australia's Sunshine City,Panorama Australia,1,29.93,29.93,14.965
+,7635,"Britain's Gentle Highway...a Canal Adventure In England, Scotland and Wales",Worldwide Travel Films,2,37.43,74.86,37.43
+,5762,Broome the Gem of the North West,Panorama Australia,1,29.93,29.93,14.965
+,6419,Brugge,David Mitchell,1,22.49,22.49,11.245
+,7373,Bryce Canyon U.S.A.,Global Television,1,22.43,22.43,11.215
+,6428,Budapest,David Mitchell,1,22.49,22.49,11.245
+,6826,"Budapest Buda & Pesth Budapest, Hungary",Global Television,2,22.43,44.86,22.43
+,7049,Budapest Hungary,Global Television,2,29.99,59.98,29.99
+,7943,Budapest Queen of the Danube,VOLWOCOM,1,29.93,29.93,14.965
+,7815,Buddha's Touch,Flying Monk Films,1,37.43,37.43,18.715
+,7474,Burj Al Arab,Global Television,1,14.99,14.99,7.495
+,7489,Burj Al Arab,Global Television,1,29.99,29.99,14.995
+,6824,Byzantine Moldavia,Global Television,2,22.43,44.86,22.43
+,6436,Cairns,David Mitchell,1,22.49,22.49,11.245
+,5736,Cairns the Gem of the Tropics,Panorama Australia,1,29.93,29.93,14.965
+,7035,Cairo Egypt,Global Television,3,29.99,89.97,44.985
+,7261,California USA,Global Television,2,29.99,59.98,29.99
+,7269,Cambodia,Global Television,1,29.99,29.99,14.995
+,7221,Canada,Global Television,4,29.99,119.96,59.98
+,7293,Canada From Coast to Coast,Global Television,3,29.99,89.97,44.985
+,5558,"Canada West, Volume 1",Jason Schmidt,1,29.93,29.93,14.965
+,7469,Canadian Railway,Global Television,4,14.99,59.96,29.98
+,7175,Canadian Rockies,Global Television,4,29.99,119.96,59.98
+,8057,Canadian Rockies,John Prawdzik Productions,2,29.93,59.86,29.93
+,7115,Canadian Rocky Mountains Canada,Global Television,4,29.99,119.96,59.98
+,5791,Canberra Australia's Capital City,Panorama Australia,1,29.93,29.93,14.965
+,7148,Canyon de Chelly Arizona,Global Television,2,29.99,59.98,29.99
+,7129,Canyonlands Park Utah,Global Television,1,29.99,29.99,14.995
+,5394,"Cape Cod, Massachusetts",Barnstormer Productions,2,22.43,44.86,22.43
+,7339,Cape Peninsula,Global Television,1,22.42,22.42,11.21
+,7034,Cape Town South Africa,Global Television,3,29.99,89.97,44.985
+,7165,Caribbean Cruise,Global Television,1,29.99,29.99,14.995
+,7429,Caribbean Dreams,Global Television,1,29.99,29.99,14.995
+,7043,Caribbean Islands,Global Television,3,29.99,89.97,44.985
+,7240,Carinthia,Global Television,1,29.99,29.99,14.995
+,7086,Carinthia Austria,Global Television,3,29.99,89.97,44.985
+,7481,Carnevale of Venice,Global Television,2,29.99,59.98,29.99
+,7006,Casablanca Morocco,Global Television,3,29.99,89.97,44.985
+,6886,Cathedral of Santiago of Compostela Spain,Global Television,2,22.43,44.86,22.43
+,7436,Celtic Dreams,Global Television,2,29.99,59.98,29.99
+,7483,Cesky Krumlov,Global Television,1,29.99,29.99,14.995
+,6975,Cesky Krumlov Czech Republic,Global Television,2,22.43,44.86,22.43
+,7019,Chengde China,Global Television,3,29.99,89.97,44.985
+,6447,Chiang Mai,David Mitchell,1,22.49,22.49,11.245
+,6941,Chiang Mai Chiengmai Thailand,Global Television,2,22.43,44.86,22.43
+,7087,Chiang Mai Thailand,Global Television,3,29.99,89.97,44.985
+,6731,"Chichen Itza & Tulum, Mexico",Global Television,3,22.43,67.29,33.645
+,7233,China,Global Television,1,29.99,29.99,14.995
+,7403,Chobe River Botswana,Global Television,1,22.43,22.43,11.215
+,6890,"Church and Convent of San Francisco Iglesia y Convento San Francisco Saint Francis Monastery Lima, Peru",Global Television,2,22.43,44.86,22.43
+,7181,Circumetnea Railroad Sicilia,Global Television,1,29.99,29.99,14.995
+,7633,Clint Denn's Cruising Russia St. Petersburg To Moscow On the Volga & Neva,Clint Denn Digital Cinema,2,37.43,74.86,37.43
+,4754,Clint Denn's Ireland,Clint Denn Digital Cinema,3,29.93,89.79,44.895
+,5653,Clint Denn's Prague - Paris and a Cruise Aboard Amadeus Waterways Symphony Cruise Ship,Clint Denn Digital Cinema,1,37.43,37.43,18.715
+,7939,Cocos Island,GRK Productions,1,29.93,29.93,14.965
+,7498,Coliseum Italy,Global Television,1,29.99,29.99,14.995
+,7906,Colorado National Monument,Global Television,2,22.43,44.86,22.43
+,7270,Colorado USA,Global Television,1,29.99,29.99,14.995
+,5387,"Conwy, Wales",Barnstormer Productions,1,22.43,22.43,11.215
+,6453,Cook Islands,David Mitchell,1,22.49,22.49,11.245
+,7078,Copenhagen Denmark,Global Television,3,29.99,89.97,44.985
+,6928,Copenhagen Kobenhavn Denmark,Global Television,3,22.43,67.29,33.645
+,7071,Córdoba Spain,Global Television,2,29.99,59.98,29.99
+,7083,Costa del Sol Spain,Global Television,3,29.99,89.97,44.985
+,6464,Costa Rica,The Nightingale Company,1,29.99,29.99,14.995
+,7025,Côte D'Azur France,Global Television,3,29.99,89.97,44.985
+,8078,Crete Greece,Media Lab,1,29.93,29.93,14.965
+,7997,Croatia Rab & Pag Island,Media Lab,1,29.93,29.93,14.965
+,7015,Cuba,Global Television,3,29.99,89.97,44.985
+,7322,Cultural Treasures,Global Television,1,29.99,29.99,14.995
+,6834,Cusco Cuzco Peru,Global Television,2,22.43,44.86,22.43
+,6435,Cuzco,David Mitchell,1,22.49,22.49,11.245
+,7107,Damascus Syria,Global Television,3,29.99,89.97,44.985
+,8066,Dark Water Rising,Shidog Films,3,37.43,112.29,56.145
+,6440,Darwin,David Mitchell,1,22.49,22.49,11.245
+,7130,Death Valley Nevada,Global Television,1,29.99,29.99,14.995
+,7069,Delhi India,Global Television,3,29.99,89.97,44.985
+,6839,Delos Greece,Global Television,2,22.43,44.86,22.43
+,6737,Delphi Greece,Global Television,2,22.43,44.86,22.43
+,7111,Denver Colorado,Global Television,3,29.99,89.97,44.985
+,7177,Desert Express Namibia,Global Television,1,29.99,29.99,14.995
+,5557,"Deserts, Casinos and UFOs",Sam Donisi,1,29.93,29.93,14.965
+,8028,"Destination Amsterdam with Stops in Belgium, Germany and Czech Republic",IndependentKoncepts,1,32.99,32.99,16.495
+,7395,Dimmuborgir Iceland,Global Television,2,22.43,44.86,22.43
+,7044,Dodekanissa Greece,Global Television,3,29.99,89.97,44.985
+,7003,Dubai United Arab Emirates,Global Television,3,29.99,89.97,44.985
+,6421,Dublin,David Mitchell,2,22.49,44.98,22.49
+,7098,Dublin Ireland,Global Television,3,29.99,89.97,44.985
+,6759,Easter Island Rapa Nui Chile,Global Television,2,22.43,44.86,22.43
+,6780,El Djem Tunisia,Global Television,2,22.43,44.86,22.43
+,6524,English Cottage and Country Gardens,The Larkspur Company,2,29.93,59.86,29.93
+,7437,Eternal Ice,Global Television,1,29.99,29.99,14.995
+,7116,"Etosha, Namibia",Global Television,1,29.98,29.98,14.99
+,7117,Everglades Florida,Global Television,1,29.99,29.99,14.995
+,7724,Experience Italy,Nagy Films,2,29.93,59.86,29.93
+,7725,"Explore San Francisco, 2nd Edition",RedGate Films,1,29.93,29.93,14.965
+,5481,Exploring French Wine Regions,GlobeScope Productions,1,37.43,37.43,18.715
+,6728,Fés Morocco,Global Television,2,22.43,44.86,22.43
+,6987,Fés Morocco,Global Television,3,29.99,89.97,44.985
+,7255,Finland,Global Television,1,29.99,29.99,14.995
+,6450,Florence,David Mitchell,2,22.49,44.98,22.49
+,6797,"Florence Firenze Tuscany, Italy",Global Television,2,22.43,44.86,22.43
+,7010,Florence Italy,Global Television,3,29.99,89.97,44.985
+,7037,Florida,Global Television,4,29.99,119.96,59.98
+,7236,Florida USA,Global Television,1,29.99,29.99,14.995
+,8029,"Football, Friends and Bier",IndependentKoncepts,1,32.99,32.99,16.495
+,6726,"Forbidden City Peking, China",Global Television,2,22.43,44.86,22.43
+,7365,Galapagos,Global Television,1,22.43,22.43,11.215
+,7067,Galicia Spain,Global Television,3,29.99,89.97,44.985
+,6527,Gardening with Summer Perennials,The Larkspur Company,1,29.99,29.99,14.995
+,4753,Germany,Clint Denn Digital Cinema,2,29.93,59.86,29.93
+,7473,Golden Gate Bridge,Global Television,1,14.99,14.99,7.495
+,7065,"Golfe Du Morbihan Bretagne, France",Global Television,3,29.99,89.97,44.985
+,7077,Granada Spain,Global Television,3,29.99,89.97,44.985
+,6749,Grand Canal Venice Italy,Global Television,2,22.43,44.86,22.43
+,7125,Grand Canyon Park Arizona,Global Television,1,29.99,29.99,14.995
+,7501,Grand Canyon U.S.A.,Global Television,2,29.99,59.98,29.99
+,7351,Grand Staircase U.S.A.,Global Television,1,22.43,22.43,11.215
+,7090,Graz Austria,Global Television,2,29.99,59.98,29.99
+,6567,Great Cities of Europe,International Travel Films,1,44.93,44.93,22.465
+,6739,Great Wall of China,Global Television,2,22.43,44.86,22.43
+,6526,Growing Good Roses,The Larkspur Company,1,29.99,29.99,14.995
+,6422,Guatemala,David Mitchell,1,22.49,22.49,11.245
+,6449,Guilin,David Mitchell,1,22.49,22.49,11.245
+,7388,Ha Long Bay Vietnam,Global Television,1,22.43,22.43,11.215
+,7085,Hà Nôi Vietnam,Global Television,3,29.99,89.97,44.985
+,6774,Hadrian's Wall England,Global Television,2,22.43,44.86,22.43
+,6792,"Hagia Sophia Istanbul, Turkey",Global Television,2,22.43,44.86,22.43
+,7038,Halifax Canada,Global Television,6,29.99,179.94,89.97
+,7101,Hamburg Germany,Global Television,4,29.99,119.96,59.98
+,6783,Havana la Habana Cuba,Global Television,2,22.43,44.86,22.43
+,7219,Hawaii,Global Television,1,29.99,29.99,14.995
+,7289,Hawaii,Global Television,2,29.99,59.98,29.99
+,6986,Hawai'i,Global Television,3,29.99,89.97,44.985
+,7097,Helsinki Finland,Global Television,3,29.99,89.97,44.985
+,6770,"Hermitage St. Petersburg, Russia",Global Television,3,22.43,67.29,33.645
+,6871,Hôi An Vietnam,Global Television,2,22.43,44.86,22.43
+,7259,Holland,Global Television,1,29.99,29.99,14.995
+,7457,Holland’s Tulip Gardens,Global Television,1,29.99,29.99,14.995
+,6999,Hong Kong China,Global Television,3,29.99,89.97,44.985
+,7046,Honolulu,Global Television,3,29.99,89.97,44.985
+,6932,Hué Vietnam,Global Television,2,22.43,44.86,22.43
+,7092,Iceland,Global Television,3,29.99,89.97,44.985
+,7189,Icelandia,Global Television,1,29.99,29.99,14.995
+,7109,Ireland,Global Television,3,29.99,89.97,44.985
+,7262,Ireland,Global Television,1,29.99,29.99,14.995
+,7021,Istanbul Turkey,Global Television,3,29.99,89.97,44.985
+,7033,Jalisco the Tequila Land Mexico,Global Television,3,29.99,89.97,44.985
+,6414,Jamaica,David Mitchell,1,22.49,22.49,11.245
+,7055,Jamaica,Global Television,3,29.99,89.97,44.985
+,7004,Johannesburg South Africa,Global Television,3,29.99,89.97,44.985
+,6963,Jordan’s Crusader Castles,Global Television,2,22.43,44.86,22.43
+,6856,Kathmandu Nepal,Global Television,2,22.43,44.86,22.43
+,7074,Kathmandu Nepal,Global Television,3,29.99,89.97,44.985
+,7063,Kathmandu Valley Nepal,Global Television,3,29.99,89.97,44.985
+,7333,"Kilauea Crater, Hawai’i",Global Television,1,22.42,22.42,11.21
+,6942,Kilkenny Gill Chainnigh Ireland,Global Television,2,22.43,44.86,22.43
+,7093,Kós Dodekanissa Greece,Global Television,2,29.99,59.98,29.99
+,6994,Kreta Greece,Global Television,3,29.99,89.97,44.985
+,7124,Kruger National Park South Africa,Global Television,1,29.99,29.99,14.995
+,7105,Kuala Lumpur Malaysia,Global Television,3,29.99,89.97,44.985
+,7024,Kykládes Greece,Global Television,2,29.99,59.98,29.99
+,6993,La Habana Cuba,Global Television,3,29.99,89.97,44.985
+,6434,La Paz,David Mitchell,1,22.49,22.49,11.245
+,6444,Lagos,David Mitchell,1,22.49,22.49,11.245
+,7354,Lagunas de Montebello Mexico,Global Television,1,22.43,22.43,11.215
+,7146,Lake Bogoria & Lake Baringo Kenya,Global Television,1,29.99,29.99,14.995
+,7108,Lapland Finland,Global Television,2,29.99,59.98,29.99
+,6990,Las Vegas,Global Television,3,29.99,89.97,44.985
+,7401,Lemmenjoki Finland,Global Television,1,22.43,22.43,11.215
+,7018,Lisbon Portugal,Global Television,3,29.99,89.97,44.985
+,7394,Lofoten Norway,Global Television,1,22.43,22.43,11.215
+,6426,London,David Mitchell,1,22.49,22.49,11.245
+,7953,London,VOLWOCOM,1,37.43,37.43,18.715
+,7058,London England,Global Television,3,29.99,89.97,44.985
+,6460,"London, England",The Nightingale Company,1,29.99,29.99,14.995
+,7013,Los Angeles California,Global Television,3,29.99,89.97,44.985
+,7362,Louisiana Swamps U.S.A.,Global Television,1,22.43,22.43,11.215
+,6802,Louvre Musee du Louvre Palais du Louvre France,Global Television,2,22.43,44.86,22.43
+,6459,"Lucerne, Switzerland",The Nightingale Company,2,29.99,59.98,29.99
+,6725,Luxor Egypt,Global Television,2,22.43,44.86,22.43
+,7012,Macau China,Global Television,3,29.99,89.97,44.985
+,6723,Machu Picchu,Global Television,2,22.43,44.86,22.43
+,5380,"Mackinac Island, Michigan",Barnstormer Productions,1,22.43,22.43,11.215
+,7009,Madrid Spain,Global Television,3,29.99,89.97,44.985
+,6467,"Madrid, Spain",The Nightingale Company,2,29.99,59.98,29.99
+,7080,Malta,Global Television,3,29.99,89.97,44.985
+,7254,Malta,Global Television,1,29.99,29.99,14.995
+,7068,Mandalay Myanmar,Global Television,3,29.99,89.97,44.985
+,6785,Marrakesh Morocco,Global Television,2,22.43,44.86,22.43
+,6996,Marrakesh Morocco,Global Television,3,29.99,89.97,44.985
+,7042,Marseille France,Global Television,3,29.99,89.97,44.985
+,7119,Massai Mara Kenya,Global Television,1,29.99,29.99,14.995
+,7029,Meknes Morocco,Global Television,3,29.99,89.97,44.985
+,6457,Melbourne,David Mitchell,1,22.49,22.49,11.245
+,5803,Melbourne Australia's Garden City,Panorama Australia,1,29.93,29.93,14.965
+,7215,Mexico,Global Television,2,29.99,59.98,29.99
+,7041,Mexico City Mexico,Global Television,3,29.99,89.97,44.985
+,6461,"Mexico City, Mexico",The Nightingale Company,1,29.99,29.99,14.995
+,6415,Miami,David Mitchell,1,22.49,22.49,11.245
+,7023,Miami,Global Television,3,29.99,89.97,44.985
+,7123,"Mississippi Swamps, New Orleans",Global Television,4,29.98,119.92,59.96
+,7017,Monaco,Global Television,3,29.99,89.97,44.985
+,7136,"Monte Etna Sicily, Italy",Global Television,1,29.99,29.99,14.995
+,6409,Montreal,David Mitchell,4,22.49,89.96,44.98
+,6991,Montréal Canada,Global Television,6,29.99,179.94,89.97
+,7505,Monument Valley U.S.A.,Global Television,1,29.99,29.99,14.995
+,7216,Morocco,Global Television,1,29.99,29.99,14.995
+,8071,Munich Oktoberfest,IndependentKoncepts,2,32.99,65.98,32.99
+,6463,"Munich, Germany",The Nightingale Company,2,29.99,59.98,29.99
+,7224,Myanmar / Burma,Global Television,1,29.99,29.99,14.995
+,6535,"Myrtle Beach, South Carolina",USA Travel DVD,2,22.43,44.86,22.43
+,7053,Nairobi Kenya,Global Television,3,29.99,89.97,44.985
+,7235,Namibia,Global Television,1,29.99,29.99,14.995
+,6536,Nashville,USA Travel DVD,3,22.43,67.29,33.645
+,7532,National Parks of the USA and Canada,ABCD Video,4,29.93,119.72,59.86
+,7002,Nepal,Global Television,3,29.99,89.97,44.985
+,7228,Nepal,Global Television,1,29.99,29.99,14.995
+,7258,Nevada USA,Global Television,2,29.99,59.98,29.99
+,7226,New England,Global Television,6,29.99,179.94,89.97
+,6980,New Orleans,Global Television,5,29.99,149.95,74.975
+,5729,New South Wales,Panorama Australia,1,29.93,29.93,14.965
+,6411,New York,David Mitchell,1,22.49,22.49,11.245
+,6983,New York,Global Television,5,29.99,149.95,74.975
+,6466,"New York City NY, United States",The Nightingale Company,1,29.99,29.99,14.995
+,6454,New Zealand,David Mitchell,1,22.49,22.49,11.245
+,6443,Newquay,David Mitchell,1,22.49,22.49,11.245
+,7431,Niagara Falls,Global Television,3,29.99,89.97,44.985
+,6425,Nice,David Mitchell,2,22.49,44.98,22.49
+,7001,Nice France,Global Television,3,29.99,89.97,44.985
+,7169,Nile Cruise,Global Television,2,29.99,59.98,29.99
+,7094,North Vietnam,Global Television,3,29.99,89.97,44.985
+,5808,Northern Territory,Panorama Australia,1,29.93,29.93,14.965
+,6552,Northern Tuscany,Fifty Rubies Productions,1,22.43,22.43,11.215
+,7265,Norway,Global Television,1,29.99,29.99,14.995
+,6915,"Notre Dame Paris, France",Global Television,2,22.43,44.86,22.43
+,7485,Palace On Wheels,Global Television,1,29.99,29.99,14.995
+,7073,Palermo Italy,Global Television,3,29.99,89.97,44.985
+,5750,Panorama Australia,Panorama Australia,1,29.93,29.93,14.965
+,5801,"Panorama Australia, Volume 2",Panorama Australia,1,29.93,29.93,14.965
+,5755,Panorama Singapore,Panorama Australia,1,29.93,29.93,14.965
+,6418,Paris,David Mitchell,1,22.49,22.49,11.245
+,7011,Paris France,Global Television,3,29.99,89.97,44.985
+,6736,"Paris Vieux Ville, France",Global Television,2,22.43,44.86,22.43
+,6458,"Paris, France",The Nightingale Company,2,29.99,59.98,29.99
+,7066,Patan Nepal,Global Television,3,29.99,89.97,44.985
+,5730,Perth Australia's Golden City,Panorama Australia,1,29.93,29.93,14.965
+,7260,Peru,Global Television,1,29.99,29.99,14.995
+,6953,Petra Jordan,Global Television,2,22.43,44.86,22.43
+,7103,Phnom Penh Cambodia,Global Television,2,29.99,59.98,29.99
+,6789,Pompeii Italy,Global Television,2,22.43,44.86,22.43
+,6836,Porto Portugal,Global Television,2,22.43,44.86,22.43
+,7007,Porto Portugal,Global Television,3,29.99,89.97,44.985
+,6568,Portraits of the Great Far East,International Travel Films,1,29.93,29.93,14.965
+,6560,Portugal,Lisboatours,1,29.93,29.93,14.965
+,7222,Portugal,Global Television,1,29.99,29.99,14.995
+,6407,Prague,David Mitchell,2,22.49,44.98,22.49
+,7529,Prague of the New Millenium,ABCD Video,1,29.93,29.93,14.965
+,6892,Prague Old Town Praha Stare Mesto Czech Republic,Global Television,2,22.43,44.86,22.43
+,7054,Praha Czech Republic,Global Television,3,29.99,89.97,44.985
+,6938,Prehistoric Malta,Global Television,2,22.43,44.86,22.43
+,7230,Provence,Global Television,1,29.99,29.99,14.995
+,7048,Provence France,Global Television,3,29.99,89.97,44.985
+,5846,Provence Terre De Lumiere,Cinesud International,1,29.93,29.93,14.965
+,5732,Queensland's South East Land of Scenic Wonder,Panorama Australia,1,29.93,29.93,14.965
+,6438,Queenstown,David Mitchell,1,22.49,22.49,11.245
+,7016,Rabat Morocco,Global Television,3,29.99,89.97,44.985
+,6586,Rails Across Russia St. Petersburg To the Pacific,GlobeScope Productions,1,37.43,37.43,18.715
+,7079,Rajasthan India,Global Television,3,29.99,89.97,44.985
+,7482,Rajputana,Global Television,1,29.99,29.99,14.995
+,7144,Rapa Nui Eastern Islands/Chile,Global Television,1,29.99,29.99,14.995
+,5771,Reflections of the Northen Territory,Panorama Australia,1,29.93,29.93,14.965
+,7084,Reykjavik Iceland,Global Television,3,29.99,89.97,44.985
+,6432,Rio De Janeiro,David Mitchell,1,22.49,22.49,11.245
+,7203,River Kwai,Global Television,1,29.99,29.99,14.995
+,7183,Road From Mandalay,Global Television,1,29.99,29.99,14.995
+,7487,Roayl Carribbean's Voyager of the Seas,Global Television,1,29.99,29.99,14.995
+,6778,"Robben Island Cape Town, South Africa",Global Television,2,22.43,44.86,22.43
+,7248,Rodos,Global Television,1,29.99,29.99,14.995
+,7060,Rodos Greece,Global Television,3,29.99,89.97,44.985
+,7957,Roma,VOLWOCOM,1,37.43,37.43,18.715
+,7022,Roma Italy,Global Television,3,29.99,89.97,44.985
+,6445,Rome,David Mitchell,2,22.49,44.98,22.49
+,6469,"Rome, Italy",The Nightingale Company,1,29.99,29.99,14.995
+,7179,Route of The White Town,Global Television,1,29.99,29.99,14.995
+,7104,Rovaniemi Finland,Global Television,2,29.99,59.98,29.99
+,7126,Royal Chitwan Park Nepal,Global Television,1,29.99,29.99,14.995
+,7207,Royal Express Boat Cruise,Global Television,1,29.99,29.99,14.995
+,6569,Royal London,International Travel Films,1,29.93,29.93,14.965
+,7197,Royal Rajasthan,Global Television,1,29.99,29.99,14.995
+,7089,Sài Gòn Ho Chi Minh City Vietnam,Global Television,3,29.99,89.97,44.985
+,7106,Salt Lake City Utah,Global Television,2,29.99,59.98,29.99
+,6427,Salzburg,David Mitchell,2,22.49,44.98,22.49
+,6806,Salzburg Austria,Global Television,2,22.43,44.86,22.43
+,7075,Salzburg Austria,Global Television,3,29.99,89.97,44.985
+,7100,Salzkamergut Austria,Global Television,2,29.99,59.98,29.99
+,7264,Salzkammergut,Global Television,1,29.99,29.99,14.995
+,7040,San Diego California,Global Television,2,29.99,59.98,29.99
+,6992,San Francisco,Global Television,2,29.99,59.98,29.99
+,6437,San Sebastian,David Mitchell,1,22.49,22.49,11.245
+,7413,Savanna,Global Television,1,29.99,29.99,14.995
+,5864,Scenic Tours of Oahu,Canyon Ridge Productions,2,37.43,74.86,37.43
+,6825,Schokland the Netherlands,Global Television,2,22.43,44.86,22.43
+,7639,Scotland,Worldwide Travel Films,3,37.43,112.29,56.145
+,5384,Season's Highlights,Barnstormer Productions,2,22.43,44.86,22.43
+,7056,Sevilla Spain,Global Television,3,29.99,89.97,44.985
+,7187,Shan State Express,Global Television,1,29.99,29.99,14.995
+,7076,Shan State Myanmar,Global Television,3,29.99,89.97,44.985
+,6470,Shanghai,The Nightingale Company,1,29.99,29.99,14.995
+,7026,Shanghai China,Global Television,3,29.99,89.97,44.985
+,7245,Sicilia,Global Television,1,29.99,29.99,14.995
+,7297,Sicily,Global Television,1,29.99,29.99,14.995
+,7088,Siem Reap Angkor Cambodia,Global Television,3,29.99,89.97,44.985
+,6773,"Siena Tuscany, Italy",Global Television,2,22.43,44.86,22.43
+,6669,Silk Road,GlobeScope Expeditions,3,37.43,112.29,56.145
+,6995,Singapore,Global Television,3,29.99,89.97,44.985
+,7223,South Africa,Global Television,1,29.99,29.99,14.995
+,7171,South African Garden Route,Global Television,1,29.99,29.99,14.995
+,6561,South African Safari,Wilson & Wilkins Productions,3,29.93,89.79,44.895
+,6456,South Australia,David Mitchell,1,22.49,22.49,11.245
+,7533,South Bohemia,ABCD Video,1,29.93,29.93,14.965
+,6416,St. Maarten,David Mitchell,1,22.49,22.49,11.245
+,6798,St. Petersburg Russia,Global Television,3,22.43,67.29,33.645
+,6984,St. Petersburg Russia,Global Television,3,29.99,89.97,44.985
+,7465,Statue of Liberty,Global Television,2,14.99,29.98,14.99
+,7005,Stockholm Sweden,Global Television,4,29.99,119.96,59.98
+,6960,Stone Town Tanzania,Global Television,2,22.43,44.86,22.43
+,6730,Stonehenge England,Global Television,3,22.43,67.29,33.645
+,7491,Stonehenge England,Global Television,1,29.99,29.99,14.995
+,7045,Sultanate of Oman Oman,Global Television,3,29.99,89.97,44.985
+,7480,Sun City,Global Television,1,29.99,29.99,14.995
+,5790,Sydney Australia's Olympic City,Panorama Australia,1,29.93,29.93,14.965
+,5777,Sydney Australia's Premier City,Panorama Australia,1,29.93,29.93,14.965
+,6465,"Sydney, Australia",The Nightingale Company,1,29.99,29.99,14.995
+,7271,Syria,Global Television,1,29.99,29.99,14.995
+,7640,Tahiti and Fiji,Worldwide Travel Films,2,37.43,74.86,37.43
+,7091,Taipei Taiwan,Global Television,3,29.99,89.97,44.985
+,7263,Taiwan,Global Television,1,29.99,29.99,14.995
+,6740,Taj Mahal India,Global Television,2,22.43,44.86,22.43
+,7272,Tanzania,Global Television,1,29.99,29.99,14.995
+,7398,Taroko Gorge Taiwan,Global Television,1,22.43,22.43,11.215
+,6455,Tasmania,David Mitchell,1,22.49,22.49,11.245
+,6746,Teotihuacan Mexico,Global Television,2,22.43,44.86,22.43
+,7238,Thailand,Global Television,1,29.99,29.99,14.995
+,7194,The Alishan Forest Railway,Global Television,1,29.99,29.99,14.995
+,7342,The Atlas Mountains Morocco,Global Television,1,22.43,22.43,11.215
+,4877,The Best of Austria,RDA Productions Inc,2,37.5,75,37.5
+,4874,The Best of Favourite Places,RDA Productions Inc,2,37.5,75,37.5
+,4873,The Best of France,RDA Productions Inc,2,37.5,75,37.5
+,4876,The Best of Portugal,RDA Productions Inc,2,37.5,75,37.5
+,4875,The Best of Quebec,RDA Productions Inc,1,37.5,37.5,18.75
+,4878,The Best of Sun Destinations,RDA Productions Inc,2,37.5,75,37.5
+,7170,The Canadian,Global Television,4,29.99,119.96,59.98
+,8056,The Canadian Rockies,John Prawdzik Productions,3,44.93,134.79,67.395
+,7234,The Caribbean,Global Television,3,29.99,89.97,44.985
+,7205,The Castles of the Umayyad Desert,Global Television,1,29.99,29.99,14.995
+,7933,"The Caves, Caverns and Wreck of Cozumel",GRK Productions,1,29.93,29.93,14.965
+,6547,The Chianti,Fifty Rubies Productions,1,22.43,22.43,11.215
+,6548,The Chianti and Central Tuscany,Fifty Rubies Productions,1,22.43,22.43,11.215
+,7195,The Dingle Peninsula,Global Television,1,29.99,29.99,14.995
+,7534,The East of USA and Canada,ABCD Video,7,29.93,209.51,104.755
+,7942,"The Famous Kelp Forest and Giant Sea Bass La Jolla, San Diego, CA",GRK Productions,2,29.93,59.86,29.93
+,6757,The Forum of Rome,Global Television,2,22.43,44.86,22.43
+,6627,The Great Canadian Train Ride,International Travel Films,3,29.93,89.79,44.895
+,6523,The Great Gardens of England,The Larkspur Company,2,29.93,59.86,29.93
+,6784,The Great Pyramid Gizeh Cheops Pyramid Egypt,Global Television,2,22.43,44.86,22.43
+,7030,The Gulf of California Mexico,Global Television,3,29.99,89.97,44.985
+,6538,The Key West DVD,DiscOdyssey,2,29.93,59.86,29.93
+,7178,The Ocean Halifax,Global Television,4,29.99,119.96,59.98
+,7637,The Other Side of Mexico,Worldwide Travel Films,1,37.43,37.43,18.715
+,5741,The River Murray,Panorama Australia,1,29.93,29.93,14.965
+,8058,The Rockies to Victoria,John Prawdzik Productions,1,44.93,44.93,22.465
+,7196,The Royal River Cruise,Global Television,1,29.99,29.99,14.995
+,7809,The Samurai,Flying Monk Films,1,37.43,37.43,18.715
+,7537,The West of the USA,ABCD Video,1,29.93,29.93,14.965
+,6764,"Tian Tan Temple of Heaven Peking, China",Global Television,2,22.43,44.86,22.43
+,6452,Tokyo,David Mitchell,1,22.49,22.49,11.245
+,7000,Toronto Canada,Global Television,6,29.99,179.94,89.97
+,7217,Toscana,Global Television,1,29.99,29.99,14.995
+,7472,Tour Deiffel,Global Television,2,14.99,29.98,14.99
+,6887,"Tower of London & Tower Bridge London, England",Global Television,2,22.43,44.86,22.43
+,7027,Town of Québec Canada,Global Television,6,29.99,179.94,89.97
+,6670,Transcaucasus,GlobeScope Expeditions,1,37.43,37.43,18.715
+,5656,Travel with Kids Caribbean,Equator Creative Media,2,22.43,44.86,22.43
+,5949,Travel with Kids Hawaii the Island of Oahu,Equator Creative Media,2,22.43,44.86,22.43
+,5948,Travel with Kids Hawaii the Islands of Maui & Molokai,Equator Creative Media,1,22.43,22.43,11.215
+,6721,Trinidad,Global Television,2,22.43,44.86,22.43
+,7031,Trinidad,Global Television,3,29.99,89.97,44.985
+,7127,Tsitsikamma South Africa,Global Television,1,29.99,29.99,14.995
+,7032,Tunis Tunisia,Global Television,3,29.99,89.97,44.985
+,7220,Tunisia,Global Television,1,29.99,29.99,14.995
+,7014,Tunisian Oasis Tunisia,Global Television,2,29.99,59.98,29.99
+,6429,Turkey,David Mitchell,1,22.49,22.49,11.245
+,6982,Tuscany Italy,Global Television,3,29.99,89.97,44.985
+,7252,Tyrol,Global Television,1,29.99,29.99,14.995
+,7059,Tyrol Austria,Global Television,3,29.99,89.97,44.985
+,5955,UFOs,Sam Donisi,1,29.93,29.93,14.965
+,5665,Undiscovered Wales,Frank M. Klicar Video Productions,1,29.93,29.93,14.965
+,7057,United Arab Emirates,Global Television,3,29.99,89.97,44.985
+,7251,United Arab Emirates,Global Television,1,29.99,29.99,14.995
+,7274,USA,Global Television,2,29.99,59.98,29.99
+,7267,Utah USA,Global Television,1,29.99,29.99,14.995
+,7095,Valletta Malta,Global Television,3,29.99,89.97,44.985
+,7147,Valley of Fire California,Global Television,1,29.99,29.99,14.995
+,8059,Vancouver,John Prawdzik Productions,3,29.93,89.79,44.895
+,7052,Vancouver Canada,Global Television,6,29.99,179.94,89.97
+,6668,Venezuela,GlobeScope Expeditions,1,29.93,29.93,14.965
+,6989,Venice Italy,Global Television,3,29.99,89.97,44.985
+,7460,"Versailles Paris, France",Global Television,1,29.99,29.99,14.995
+,8062,Victoria & Vancouver Island,John Prawdzik Productions,3,29.93,89.79,44.895
+,5797,Victoria Australia's Garden State,Panorama Australia,1,29.93,29.93,14.965
+,7399,Victoria Falls Zimbabwe,Global Television,1,22.43,22.43,11.215
+,7961,Vienna (Wien),VOLWOCOM,1,37.43,37.43,18.715
+,6747,Vienna Austria,Global Television,2,22.43,44.86,22.43
+,6985,Vienna Austria,Global Television,3,29.99,89.97,44.985
+,7110,Vientiane Laos,Global Television,3,29.99,89.97,44.985
+,7244,Viet Nam,Global Television,1,29.99,29.99,14.995
+,6838,"Vieux Quebec, Canada",Global Television,2,14.95,29.9,14.95
+,7466,Voyager of the Seas,Global Television,1,14.99,14.99,7.495
+,6897,Wachau Austria,Global Television,2,22.43,44.86,22.43
+,7096,Wachau Austria,Global Television,3,29.99,89.97,44.985
+,7402,Wadi Rum Jordan,Global Television,1,22.43,22.43,11.215
+,7357,Waimea Canyon Hawai’i,Global Television,1,22.43,22.43,11.215
+,6462,Washington D.C.,The Nightingale Company,3,29.99,89.97,44.985
+,6896,"Wat Pho Wat Phra Chetuphon the Temple of the Reclinning Buddha Bangkok, Thailand",Global Television,2,22.43,44.86,22.43
+,4149,Western Canada Far & Wild,Wilson & Wilkins Productions,3,29.93,89.79,44.895
+,6430,"Western Canada, Part 1",David Mitchell,4,22.49,89.96,44.98
+,6431,"Western Canada, Part 2",David Mitchell,4,22.49,89.96,44.98
+,7484,Wild West Rodeo,Global Television,1,29.99,29.99,14.995
+,5782,Wildflowers,Panorama Australia,1,29.93,29.93,14.965
+,6537,Wisconsin Dell,USA Travel DVD,2,22.43,44.86,22.43
+,7273,Wyoming - South Dakota USA,Global Television,1,29.99,29.99,14.995
+,7082,Yangon Myanmar,Global Television,3,29.99,89.97,44.985
+,6334,Yellowstone National Park,"Adventure Crew, Inc.",4,25.49,101.96,50.98
+,7140,Yellowstone National Park Wyoming,Global Television,3,29.99,89.97,44.985
+,6845,"Yihe Yuan Summer Palace Peking, China",Global Television,2,22.43,44.86,22.43
+,7343,"Yosemite Park, U.S.A.",Global Television,2,22.42,44.84,22.42
+,7621,Your Guide Around NYC,Storeyline Productions,2,22.49,44.98,22.49
+,6424,Yucatan,David Mitchell,1,22.49,22.49,11.245
+,7051,Yucatán Mexico,Global Television,3,29.99,89.97,44.985
+,7036,Yunnan China,Global Television,3,29.99,89.97,44.985
+,7372,Yunnan Shilin China,Global Television,1,22.43,22.43,11.215
+,7112,Zanzibar Island Tanzania,Global Television,3,29.99,89.97,44.985
+,7364,Zion U.S.A.,Global Television,2,22.43,44.86,22.43

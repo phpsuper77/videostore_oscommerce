@@ -1,0 +1,844 @@
+2007-09-18 16:09:48------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<new-order-notification xmlns="http://checkout.google.com/schema/2" serial-number="552436991416252-00001-7">
+  <timestamp>2007-09-18T20:51:46.000Z</timestamp>
+  <shopping-cart>
+    <items>
+      <item>
+        <tax-table-selector>tax-230</tax-table-selector>
+        <quantity>1</quantity>
+        <unit-price currency="USD">0.05</unit-price>
+        <item-name>&lt;b&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;b&gt;Savannah&lt;/b&gt;&amp;nbsp;Calling-VHS</item-name>
+        <item-description>&lt;b&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;b&gt;Savannah&lt;/b&gt;&amp;nbsp;Calling-VHS</item-description>
+      </item>
+    </items>
+    <merchant-private-data>
+      
+			
+      <osc-orders-id>147016</osc-orders-id>
+      
+			
+    </merchant-private-data>
+  </shopping-cart>
+  <order-adjustment>
+    <merchant-codes />
+    <shipping>
+      <flat-rate-shipping-adjustment>
+        <shipping-name>Your order qualifies for FREE SHIPPING! (USPS Media Mail (4 - 14 Business Days))</shipping-name>
+        <shipping-cost currency="USD">0.0</shipping-cost>
+      </flat-rate-shipping-adjustment>
+    </shipping>
+    <total-tax currency="USD">0.0</total-tax>
+    <adjustment-total currency="USD">0.0</adjustment-total>
+  </order-adjustment>
+  <google-order-number>552436991416252</google-order-number>
+  <buyer-shipping-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-shipping-address>
+  <buyer-billing-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-billing-address>
+  <buyer-marketing-preferences>
+    <email-allowed>true</email-allowed>
+  </buyer-marketing-preferences>
+  <order-total currency="USD">0.05</order-total>
+  <fulfillment-order-state>NEW</fulfillment-order-state>
+  <financial-order-state>REVIEWING</financial-order-state>
+  <buyer-id>115266790420533</buyer-id>
+</new-order-notification>
+
+
+
+2007-09-18 18:09:53------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="552436991416252-00006-1">
+  <timestamp>2007-09-18T22:06:52.000Z</timestamp>
+  <google-order-number>552436991416252</google-order-number>
+  <new-fulfillment-order-state>NEW</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>REVIEWING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-18 18:09:55------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<risk-information-notification xmlns="http://checkout.google.com/schema/2" serial-number="552436991416252-00006-5">
+  <timestamp>2007-09-18T22:06:52.000Z</timestamp>
+  <google-order-number>552436991416252</google-order-number>
+  <risk-information>
+    <billing-address>
+      <contact-name>Ukraine</contact-name>
+      <company-name></company-name>
+      <email>Oleg.Koleshchuk@gmail.com</email>
+      <phone></phone>
+      <fax></fax>
+      <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+      <address2></address2>
+      <country-code>UA</country-code>
+      <city>Kiev</city>
+      <region></region>
+      <postal-code>02140</postal-code>
+    </billing-address>
+    <ip-address>194.242.117.148</ip-address>
+    <avs-response>U</avs-response>
+    <cvn-response>M</cvn-response>
+    <eligible-for-protection>false</eligible-for-protection>
+    <partial-cc-number>9301</partial-cc-number>
+    <buyer-account-age>12</buyer-account-age>
+  </risk-information>
+</risk-information-notification>
+
+
+
+2007-09-18 18:09:57------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="552436991416252-00007-1">
+  <timestamp>2007-09-18T22:06:52.000Z</timestamp>
+  <google-order-number>552436991416252</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-18 18:09:58------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="552436991416252-00009-1">
+  <timestamp>2007-09-18T22:06:52.000Z</timestamp>
+  <google-order-number>552436991416252</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGING</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-18 18:09:09------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="552436991416252-00011-1">
+  <timestamp>2007-09-18T22:07:08.000Z</timestamp>
+  <google-order-number>552436991416252</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGED</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-18 18:09:10------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<charge-amount-notification xmlns="http://checkout.google.com/schema/2" serial-number="552436991416252-00011-2">
+  <timestamp>2007-09-18T22:07:08.000Z</timestamp>
+  <google-order-number>552436991416252</google-order-number>
+  <latest-charge-amount currency="USD">0.05</latest-charge-amount>
+  <total-charge-amount currency="USD">0.05</total-charge-amount>
+</charge-amount-notification>
+
+
+
+2007-09-19 03:09:25------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<new-order-notification xmlns="http://checkout.google.com/schema/2" serial-number="256715991350148-00001-7">
+  <timestamp>2007-09-17T20:43:49.000Z</timestamp>
+  <shopping-cart>
+    <items>
+      <item>
+        <tax-table-selector>tax-881</tax-table-selector>
+        <quantity>1</quantity>
+        <unit-price currency="USD">0.08</unit-price>
+        <item-name>&lt;b&gt;&lt;/b&gt;&amp;nbsp;National Parks&amp;nbsp;&lt;b&gt;Yellowstone, Grand Canyon &amp; Yosemite&lt;/b&gt;&amp;nbsp;3 DVD Set-DVD</item-name>
+        <item-description>&lt;b&gt;&lt;/b&gt;&amp;nbsp;National Parks&amp;nbsp;&lt;b&gt;Yellowstone, Grand Canyon &amp; Yosemite&lt;/b&gt;&amp;nbsp;3 DVD Set-DVD</item-description>
+      </item>
+    </items>
+    <merchant-private-data>
+      
+			
+      <osc-orders-id>92502</osc-orders-id>
+      
+			
+    </merchant-private-data>
+  </shopping-cart>
+  <order-adjustment>
+    <merchant-codes />
+    <shipping>
+      <flat-rate-shipping-adjustment>
+        <shipping-name>Your order qualifies for FREE SHIPPING! (USPS Media Mail (4 - 14 Business Days))</shipping-name>
+        <shipping-cost currency="USD">0.0</shipping-cost>
+      </flat-rate-shipping-adjustment>
+    </shipping>
+    <total-tax currency="USD">0.0</total-tax>
+    <adjustment-total currency="USD">0.0</adjustment-total>
+  </order-adjustment>
+  <google-order-number>256715991350148</google-order-number>
+  <buyer-shipping-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-shipping-address>
+  <buyer-billing-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-billing-address>
+  <buyer-marketing-preferences>
+    <email-allowed>true</email-allowed>
+  </buyer-marketing-preferences>
+  <order-total currency="USD">0.08</order-total>
+  <fulfillment-order-state>NEW</fulfillment-order-state>
+  <financial-order-state>REVIEWING</financial-order-state>
+  <buyer-id>115266790420533</buyer-id>
+</new-order-notification>
+
+
+
+2007-09-19 03:09:26------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="256715991350148-00006-1">
+  <timestamp>2007-09-17T21:46:05.000Z</timestamp>
+  <google-order-number>256715991350148</google-order-number>
+  <new-fulfillment-order-state>NEW</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>REVIEWING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 03:09:27------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<risk-information-notification xmlns="http://checkout.google.com/schema/2" serial-number="256715991350148-00006-5">
+  <timestamp>2007-09-17T21:46:05.000Z</timestamp>
+  <google-order-number>256715991350148</google-order-number>
+  <risk-information>
+    <billing-address>
+      <contact-name>Ukraine</contact-name>
+      <company-name></company-name>
+      <email>Oleg.Koleshchuk@gmail.com</email>
+      <phone></phone>
+      <fax></fax>
+      <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+      <address2></address2>
+      <country-code>UA</country-code>
+      <city>Kiev</city>
+      <region></region>
+      <postal-code>02140</postal-code>
+    </billing-address>
+    <ip-address>194.242.117.148</ip-address>
+    <avs-response>U</avs-response>
+    <cvn-response>M</cvn-response>
+    <eligible-for-protection>false</eligible-for-protection>
+    <partial-cc-number>9301</partial-cc-number>
+    <buyer-account-age>11</buyer-account-age>
+  </risk-information>
+</risk-information-notification>
+
+
+
+2007-09-19 03:09:28------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="256715991350148-00007-1">
+  <timestamp>2007-09-17T21:46:05.000Z</timestamp>
+  <google-order-number>256715991350148</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 03:09:30------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="256715991350148-00009-1">
+  <timestamp>2007-09-17T21:46:06.000Z</timestamp>
+  <google-order-number>256715991350148</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGING</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 03:09:31------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="256715991350148-00010-1">
+  <timestamp>2007-09-17T21:46:07.000Z</timestamp>
+  <google-order-number>256715991350148</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGED</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 03:09:32------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<charge-amount-notification xmlns="http://checkout.google.com/schema/2" serial-number="256715991350148-00010-2">
+  <timestamp>2007-09-17T21:46:07.000Z</timestamp>
+  <google-order-number>256715991350148</google-order-number>
+  <latest-charge-amount currency="USD">0.08</latest-charge-amount>
+  <total-charge-amount currency="USD">0.08</total-charge-amount>
+</charge-amount-notification>
+
+
+
+2007-09-19 06:09:27------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<new-order-notification xmlns="http://checkout.google.com/schema/2" serial-number="258272928640708-00001-7">
+  <timestamp>2007-09-17T20:19:04.000Z</timestamp>
+  <shopping-cart>
+    <items>
+      <item>
+        <tax-table-selector>tax-881</tax-table-selector>
+        <quantity>1</quantity>
+        <unit-price currency="USD">0.08</unit-price>
+        <item-name>&lt;b&gt;&lt;/b&gt;&amp;nbsp;National Parks&amp;nbsp;&lt;b&gt;Yellowstone, Grand Canyon &amp; Yosemite&lt;/b&gt;&amp;nbsp;3 DVD Set-DVD</item-name>
+        <item-description>&lt;b&gt;&lt;/b&gt;&amp;nbsp;National Parks&amp;nbsp;&lt;b&gt;Yellowstone, Grand Canyon &amp; Yosemite&lt;/b&gt;&amp;nbsp;3 DVD Set-DVD</item-description>
+      </item>
+    </items>
+    <merchant-private-data>
+      
+			
+      <osc-orders-id>92500</osc-orders-id>
+      
+			
+    </merchant-private-data>
+  </shopping-cart>
+  <order-adjustment>
+    <merchant-codes />
+    <shipping>
+      <flat-rate-shipping-adjustment>
+        <shipping-name>Your order qualifies for FREE SHIPPING! (USPS Media Mail (4 - 14 Business Days))</shipping-name>
+        <shipping-cost currency="USD">0.0</shipping-cost>
+      </flat-rate-shipping-adjustment>
+    </shipping>
+    <total-tax currency="USD">0.0</total-tax>
+    <adjustment-total currency="USD">0.0</adjustment-total>
+  </order-adjustment>
+  <google-order-number>258272928640708</google-order-number>
+  <buyer-shipping-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-shipping-address>
+  <buyer-billing-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-billing-address>
+  <buyer-marketing-preferences>
+    <email-allowed>true</email-allowed>
+  </buyer-marketing-preferences>
+  <order-total currency="USD">0.08</order-total>
+  <fulfillment-order-state>NEW</fulfillment-order-state>
+  <financial-order-state>REVIEWING</financial-order-state>
+  <buyer-id>115266790420533</buyer-id>
+</new-order-notification>
+
+
+
+2007-09-19 06:09:27------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="258272928640708-00006-1">
+  <timestamp>2007-09-17T20:34:14.000Z</timestamp>
+  <google-order-number>258272928640708</google-order-number>
+  <new-fulfillment-order-state>NEW</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>REVIEWING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 06:09:29------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<risk-information-notification xmlns="http://checkout.google.com/schema/2" serial-number="258272928640708-00006-5">
+  <timestamp>2007-09-17T20:34:14.000Z</timestamp>
+  <google-order-number>258272928640708</google-order-number>
+  <risk-information>
+    <billing-address>
+      <contact-name>Ukraine</contact-name>
+      <company-name></company-name>
+      <email>Oleg.Koleshchuk@gmail.com</email>
+      <phone></phone>
+      <fax></fax>
+      <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+      <address2></address2>
+      <country-code>UA</country-code>
+      <city>Kiev</city>
+      <region></region>
+      <postal-code>02140</postal-code>
+    </billing-address>
+    <ip-address>194.242.117.148</ip-address>
+    <avs-response>U</avs-response>
+    <cvn-response>M</cvn-response>
+    <eligible-for-protection>true</eligible-for-protection>
+    <partial-cc-number>9301</partial-cc-number>
+    <buyer-account-age>11</buyer-account-age>
+  </risk-information>
+</risk-information-notification>
+
+
+
+2007-09-19 06:09:30------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="258272928640708-00007-1">
+  <timestamp>2007-09-17T20:34:14.000Z</timestamp>
+  <google-order-number>258272928640708</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 06:09:31------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="258272928640708-00009-1">
+  <timestamp>2007-09-17T20:34:14.000Z</timestamp>
+  <google-order-number>258272928640708</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGING</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 06:09:32------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="258272928640708-00010-1">
+  <timestamp>2007-09-17T20:36:52.000Z</timestamp>
+  <google-order-number>258272928640708</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGED</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 06:09:33------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<charge-amount-notification xmlns="http://checkout.google.com/schema/2" serial-number="258272928640708-00010-2">
+  <timestamp>2007-09-17T20:36:52.000Z</timestamp>
+  <google-order-number>258272928640708</google-order-number>
+  <latest-charge-amount currency="USD">0.08</latest-charge-amount>
+  <total-charge-amount currency="USD">0.08</total-charge-amount>
+</charge-amount-notification>
+
+
+
+2007-09-19 07:09:24------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<new-order-notification xmlns="http://checkout.google.com/schema/2" serial-number="742921212874588-00001-7">
+  <timestamp>2007-09-17T20:45:47.000Z</timestamp>
+  <shopping-cart>
+    <items>
+      <item>
+        <tax-table-selector>tax-881</tax-table-selector>
+        <quantity>1</quantity>
+        <unit-price currency="USD">0.08</unit-price>
+        <item-name>&lt;b&gt;&lt;/b&gt;&amp;nbsp;National Parks&amp;nbsp;&lt;b&gt;Yellowstone, Grand Canyon &amp; Yosemite&lt;/b&gt;&amp;nbsp;3 DVD Set-DVD</item-name>
+        <item-description>&lt;b&gt;&lt;/b&gt;&amp;nbsp;National Parks&amp;nbsp;&lt;b&gt;Yellowstone, Grand Canyon &amp; Yosemite&lt;/b&gt;&amp;nbsp;3 DVD Set-DVD</item-description>
+      </item>
+    </items>
+    <merchant-private-data>
+      
+			
+      <osc-orders-id>92503</osc-orders-id>
+      
+			
+    </merchant-private-data>
+  </shopping-cart>
+  <order-adjustment>
+    <merchant-codes />
+    <shipping>
+      <flat-rate-shipping-adjustment>
+        <shipping-name>Your order qualifies for FREE SHIPPING! (USPS Media Mail (4 - 14 Business Days))</shipping-name>
+        <shipping-cost currency="USD">0.0</shipping-cost>
+      </flat-rate-shipping-adjustment>
+    </shipping>
+    <total-tax currency="USD">0.0</total-tax>
+    <adjustment-total currency="USD">0.0</adjustment-total>
+  </order-adjustment>
+  <google-order-number>742921212874588</google-order-number>
+  <buyer-shipping-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-shipping-address>
+  <buyer-billing-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-billing-address>
+  <buyer-marketing-preferences>
+    <email-allowed>true</email-allowed>
+  </buyer-marketing-preferences>
+  <order-total currency="USD">0.08</order-total>
+  <fulfillment-order-state>NEW</fulfillment-order-state>
+  <financial-order-state>REVIEWING</financial-order-state>
+  <buyer-id>115266790420533</buyer-id>
+</new-order-notification>
+
+
+
+2007-09-19 07:09:24------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="742921212874588-00006-1">
+  <timestamp>2007-09-17T21:46:05.000Z</timestamp>
+  <google-order-number>742921212874588</google-order-number>
+  <new-fulfillment-order-state>NEW</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>REVIEWING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 07:09:25------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<risk-information-notification xmlns="http://checkout.google.com/schema/2" serial-number="742921212874588-00006-5">
+  <timestamp>2007-09-17T21:46:05.000Z</timestamp>
+  <google-order-number>742921212874588</google-order-number>
+  <risk-information>
+    <billing-address>
+      <contact-name>Ukraine</contact-name>
+      <company-name></company-name>
+      <email>Oleg.Koleshchuk@gmail.com</email>
+      <phone></phone>
+      <fax></fax>
+      <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+      <address2></address2>
+      <country-code>UA</country-code>
+      <city>Kiev</city>
+      <region></region>
+      <postal-code>02140</postal-code>
+    </billing-address>
+    <ip-address>194.242.117.148</ip-address>
+    <avs-response>U</avs-response>
+    <cvn-response>M</cvn-response>
+    <eligible-for-protection>false</eligible-for-protection>
+    <partial-cc-number>9301</partial-cc-number>
+    <buyer-account-age>11</buyer-account-age>
+  </risk-information>
+</risk-information-notification>
+
+
+
+2007-09-19 07:09:27------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="742921212874588-00007-1">
+  <timestamp>2007-09-17T21:46:05.000Z</timestamp>
+  <google-order-number>742921212874588</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 07:09:28------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="742921212874588-00009-1">
+  <timestamp>2007-09-17T21:46:05.000Z</timestamp>
+  <google-order-number>742921212874588</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGING</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 07:09:29------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="742921212874588-00010-1">
+  <timestamp>2007-09-17T21:46:06.000Z</timestamp>
+  <google-order-number>742921212874588</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGED</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 07:09:30------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<charge-amount-notification xmlns="http://checkout.google.com/schema/2" serial-number="742921212874588-00010-2">
+  <timestamp>2007-09-17T21:46:06.000Z</timestamp>
+  <google-order-number>742921212874588</google-order-number>
+  <latest-charge-amount currency="USD">0.08</latest-charge-amount>
+  <total-charge-amount currency="USD">0.08</total-charge-amount>
+</charge-amount-notification>
+
+
+
+2007-09-19 17:09:24------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<new-order-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00001-7">
+  <timestamp>2007-09-19T21:01:22.000Z</timestamp>
+  <shopping-cart>
+    <items>
+      <item>
+        <tax-table-selector>tax-230</tax-table-selector>
+        <quantity>1</quantity>
+        <unit-price currency="USD">0.7</unit-price>
+        <item-name>&lt;b&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;b&gt;Savannah&lt;/b&gt;&amp;nbsp;Calling-VHS</item-name>
+        <item-description>&lt;b&gt;&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;b&gt;Savannah&lt;/b&gt;&amp;nbsp;Calling-VHS</item-description>
+      </item>
+    </items>
+    <merchant-private-data>
+      
+			
+      <osc-orders-id>147117</osc-orders-id>
+      
+			
+    </merchant-private-data>
+  </shopping-cart>
+  <order-adjustment>
+    <merchant-codes />
+    <shipping>
+      <flat-rate-shipping-adjustment>
+        <shipping-name>Your order qualifies for FREE SHIPPING! (USPS Media Mail (4 - 14 Business Days))</shipping-name>
+        <shipping-cost currency="USD">0.0</shipping-cost>
+      </flat-rate-shipping-adjustment>
+    </shipping>
+    <total-tax currency="USD">0.0</total-tax>
+    <adjustment-total currency="USD">0.0</adjustment-total>
+  </order-adjustment>
+  <google-order-number>713716280565341</google-order-number>
+  <buyer-shipping-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-shipping-address>
+  <buyer-billing-address>
+    <contact-name>Ukraine</contact-name>
+    <company-name></company-name>
+    <email>Oleg.Koleshchuk@gmail.com</email>
+    <phone></phone>
+    <fax></fax>
+    <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+    <address2></address2>
+    <country-code>UA</country-code>
+    <city>Kiev</city>
+    <region></region>
+    <postal-code>02140</postal-code>
+  </buyer-billing-address>
+  <buyer-marketing-preferences>
+    <email-allowed>true</email-allowed>
+  </buyer-marketing-preferences>
+  <order-total currency="USD">0.7</order-total>
+  <fulfillment-order-state>NEW</fulfillment-order-state>
+  <financial-order-state>REVIEWING</financial-order-state>
+  <buyer-id>115266790420533</buyer-id>
+</new-order-notification>
+
+
+
+2007-09-19 17:09:08------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00006-1">
+  <timestamp>2007-09-19T21:15:07.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <new-fulfillment-order-state>NEW</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>REVIEWING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 17:09:10------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<risk-information-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00006-5">
+  <timestamp>2007-09-19T21:15:07.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <risk-information>
+    <billing-address>
+      <contact-name>Ukraine</contact-name>
+      <company-name></company-name>
+      <email>Oleg.Koleshchuk@gmail.com</email>
+      <phone></phone>
+      <fax></fax>
+      <address1>dfsdfgdsfgsdfgsdf, 13/56</address1>
+      <address2></address2>
+      <country-code>UA</country-code>
+      <city>Kiev</city>
+      <region></region>
+      <postal-code>02140</postal-code>
+    </billing-address>
+    <ip-address>194.242.117.148</ip-address>
+    <avs-response>U</avs-response>
+    <cvn-response>M</cvn-response>
+    <eligible-for-protection>true</eligible-for-protection>
+    <partial-cc-number>9301</partial-cc-number>
+    <buyer-account-age>13</buyer-account-age>
+  </risk-information>
+</risk-information-notification>
+
+
+
+2007-09-19 17:09:11------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00007-1">
+  <timestamp>2007-09-19T21:15:07.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGEABLE</new-financial-order-state>
+  <previous-fulfillment-order-state>NEW</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 17:09:12------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00009-1">
+  <timestamp>2007-09-19T21:15:07.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGING</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGEABLE</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 17:09:33------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00011-1">
+  <timestamp>2007-09-19T21:15:31.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <new-fulfillment-order-state>PROCESSING</new-fulfillment-order-state>
+  <new-financial-order-state>CHARGED</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGING</previous-financial-order-state>
+</order-state-change-notification>
+
+
+
+2007-09-19 17:09:34------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<charge-amount-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00011-2">
+  <timestamp>2007-09-19T21:15:31.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <latest-charge-amount currency="USD">0.7</latest-charge-amount>
+  <total-charge-amount currency="USD">0.7</total-charge-amount>
+</charge-amount-notification>
+
+
+
+2007-09-19 17:09:51------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<refund-amount-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00012-3">
+  <timestamp>2007-09-19T21:18:50.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <latest-refund-amount currency="USD">0.7</latest-refund-amount>
+  <total-refund-amount currency="USD">0.7</total-refund-amount>
+</refund-amount-notification>
+
+
+
+2007-09-19 17:09:52------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<order-state-change-notification xmlns="http://checkout.google.com/schema/2" serial-number="713716280565341-00013-1">
+  <timestamp>2007-09-19T21:18:50.000Z</timestamp>
+  <google-order-number>713716280565341</google-order-number>
+  <new-fulfillment-order-state>WILL_NOT_DELIVER</new-fulfillment-order-state>
+  <new-financial-order-state>CANCELLED</new-financial-order-state>
+  <previous-fulfillment-order-state>PROCESSING</previous-fulfillment-order-state>
+  <previous-financial-order-state>CHARGED</previous-financial-order-state>
+</order-state-change-notification>
+
+
+

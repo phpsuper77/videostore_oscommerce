@@ -1,0 +1,39 @@
+Return-path: <terrae2@travelvideostore.com>
+Envelope-to: creditcardreceipt@travelvideostore.com,
+ creditcardreceipt@travelvideostore.com
+Delivery-date: Tue, 10 Apr 2007 17:14:48 -0400
+Received: from apache by cp.travelvideostore.com with local (Exim 4.42)
+	id 1HbNfs-0004BU-2v; Tue, 10 Apr 2007 17:14:48 -0400
+To: creditcardreceipt@travelvideostore.com
+Subject: Transaction Error: 
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Transaction service
+To: CreditCardReceipt <creditcardreceipt@travelvideostore.com>
+Message-Id: <E1HbNfs-0004BU-2v@cp.travelvideostore.com>
+Date: Tue, 10 Apr 2007 17:14:48 -0400
+
+
+<table width="800" border="1"><tr><td>array(10) {
+  ["payment"]=>
+  string(12) "linkpointms1"
+  ["cc_owner"]=>
+  string(13) "KEVIN BLALOCK"
+  ["cc_number"]=>
+  string(19) "4798 1535 0001 4258"
+  ["cc_expires_month"]=>
+  string(2) "01"
+  ["cc_expires_year"]=>
+  string(2) "07"
+  ["cc_checkcode"]=>
+  string(3) "221"
+  ["purchase_order_number"]=>
+  string(0) ""
+  ["comments"]=>
+  string(0) ""
+  ["x"]=>
+  string(2) "15"
+  ["y"]=>
+  string(2) "14"
+}
+</td></tr></table><br><br><b>Reason:</b> The expiry date entered for the credit card is invalid.<br>Please check the date and try again.

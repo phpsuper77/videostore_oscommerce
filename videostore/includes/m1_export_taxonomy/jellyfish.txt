@@ -1,0 +1,30 @@
+﻿Arts & Crafts	1
+Baby & Nursery	2
+Beauty & Fragrance	3
+Books & Magazines	4
+Cameras & Optics	5
+Car & Garage	6
+Clothing & Shoes	7
+Collectibles & Memorabilia	8
+Computing	9
+Electronics	10
+Flowers	11
+Gourmet Food & Chocolate	12
+Health & Wellness	13
+Home Furnishings	14
+Jewelry & Watches	15
+Kitchen & Housewares	16
+Lawn & Garden	17
+Miscellaneous	18
+Movies	19
+Music	20
+Musical Instruments	21
+Office Products	22
+Pet Supplies	23
+Software	24
+Sports & Outdoors	25
+Tools & Hardware	26
+Toys	27
+Travel	28
+Vehicles	29
+Video Games	30
